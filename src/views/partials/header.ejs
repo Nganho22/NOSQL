@@ -11,6 +11,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/home.css">
 </head>
+
 <body>
     <header>
         <!-- Row 1 -->
@@ -19,30 +20,36 @@
                 <button class="custom-button"><img src="/img/vn.png" class="rounded-image"></button>
             </div>
             <div class="logo">
-                <% if (selectedOption === 'nosql') { %>
+                <% if (selectedOption==='nosql' ) { %>
                     <img src="/img/logo.png" alt="FutaBus Logo" onclick="window.location.href='/nosql'">
-                <% } else { %>
-                    <img src="/img/logo.png" alt="FutaBus Logo" onclick="window.location.href='/sql'">
-                <% } %>
+                    <% } else { %>
+                        <img src="/img/logo.png" alt="FutaBus Logo" onclick="window.location.href='/sql'">
+                        <% } %>
             </div>
             <div class="right-buttons">
-                <% if (selectedOption === 'nosql') { %>
-                    <button class="custom-button-login" id="login/signup" alt="custom-button-login" onclick="window.location.href='/nosql/login'">Đăng nhập/Đăng ký</button>
-                <% } else { %>
-                    <button class="custom-button-login" id="login/signup" alt="custom-button-login" onclick="window.location.href='/sql/login'">Đăng nhập/Đăng ký</button>
-                <% } %>
+                <% if (selectedOption==='nosql' ) { %>
+                    <button class="custom-button-login" id="login/signup" alt="custom-button-login"
+                        onclick="window.location.href='/nosql/login'">Đăng nhập/Đăng ký</button>
+                    <% } else { %>
+                        <button class="custom-button-login" id="login/signup" alt="custom-button-login"
+                            onclick="window.location.href='/sql/login'">Đăng nhập/Đăng ký</button>
+                        <% } %>
             </div>
-            
+
         </div>
         <!-- Row 2 -->
         <div class="row2">
             <nav>
                 <ul>
-                    <li><a href="/">Trang chủ</a></li>
-                    <li><a href="/ve-xe">Vé xe</a></li>
-                    <li><a href="/tuyen-xe">Tuyến xe</a></li>
-                    <li><a href="/tin-tuc">Tin tức</a></li>
-                    <li><a href="/lien-he">Liên hệ</a></li>
+                    <% if (selectedOption==='nosql' ) { %>
+                        <li><a href="/" onclick="window.location.href='/nosql'" color="white">Trang chủ</a></li>
+                        <% } else { %>
+                            <li><a href="/" onclick="window.location.href='/sql'" color ="white">Trang chủ</a></li>
+                            <% } %>
+                                <li><a href="/ve-xe">Vé xe</a></li>
+                                <li><a href="/tuyen-xe">Tuyến xe</a></li>
+                                <li><a href="/tin-tuc">Tin tức</a></li>
+                                <li><a href="/lien-he">Liên hệ</a></li>
                 </ul>
             </nav>
         </div>
