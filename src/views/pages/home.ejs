@@ -19,7 +19,12 @@
             <div class="container">
                 <h1>Đặt vé xe trực tuyến với FutaBus</h1>
                 <p>FutaBus là dịch vụ xe buýt chất lượng cao, đem lại trải nghiệm tuyệt vời cho hành khách.</p>
-                <a href="#" class="btn">Đặt vé ngay</a>
+                <% if (selectedOption==='nosql' ) { %>
+                    <a href="#" class="btn" onclick="window.location.href='/nosql/DatVe'">Đặt vé ngay</a>
+                    <% } else { %>
+                        <a href="#" class="btn" onclick="window.location.href='/sql/DatVe'">Đặt vé ngay</a>
+                        <% } %>
+
             </div>
         </section>
 

@@ -28,7 +28,12 @@ let GetLoginPage = async (req, res) => {
     return res.render('pages/loginPage.ejs', {selectedOption: 'nosql' });
 }
 
+let GetDatVePage = async (req, res) => {
+    return res.render('pages/DatVe.ejs', {selectedOption: 'nosql' });
+}
+
 module.exports = {
     gethomepage,
-    GetLoginPage
+    GetLoginPage,
+    GetDatVePage
 }

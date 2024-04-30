@@ -26,10 +26,14 @@ let getDeXuatChuyenXe = async (req, res) => {
 }
 
 let GetLoginPage = async (req, res) => {
-    return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
+    return res.render('pages/loginPage.ejs', { selectedOption: 'sql' });
+}
+let GetDatVePage = async (req, res) => {
+    return res.render('pages/DatVe.ejs', {selectedOption: 'sql' });
 }
 
 module.exports = {
     getDeXuatChuyenXe,
-    GetLoginPage
+    GetLoginPage,
+    GetDatVePage
 };

@@ -4,7 +4,7 @@ const path = require('path')
 const NoSQL_DeXuatChuyenXe = require('../controllers/NoSQL')
 
 function initNoSQLRoute(app) {
-
+    router.get('/nosql/DatVe')
     router.get('/nosql/login', NoSQL_DeXuatChuyenXe.GetLoginPage)
     router.get('/nosql', NoSQL_DeXuatChuyenXe)
     return app.use('/', router)
