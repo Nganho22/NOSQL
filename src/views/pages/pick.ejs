@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện</title>
+    <style>
+        body {
+            background-color: rgba(255, 119, 0, 0.827);
+            /* Màu nền cam */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white;">FUTA BUS</h1>
+    <div>
+        <button onclick="goToSQL()">SQL</button>
+        <button onclick="goToNoSQL()">NoSQL</button>
+    </div>
+
+    <script>
+        function goToSQL() {
+            // Chuyển hướng đến trang SQL
+            window.location.href = "/sql";
+        }
+
+        function goToNoSQL() {
+            // Chuyển hướng đến trang NoSQL
+            window.location.href = "/nosql";
+        }
+    </script>
+</body>
+
+</html>

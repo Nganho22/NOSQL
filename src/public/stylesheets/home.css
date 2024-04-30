@@ -1,0 +1,290 @@
+header {
+    background-color: #f1673C;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* Khoảng cách giữa hai dòng */
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    align-items: center;
+    border-width: 20%;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.custom-button {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#custom-button-login {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+    /* Đặt bán kính cho góc bầu */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#custom-button-login:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF7F5;
+}
+
+#intro {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#intro {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/img/nen.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    /* Đặt vị trí tương đối để các phần tử con có thể sử dụng vị trí tuyệt đối */
+    z-index: 1;
+    /* Đảm bảo rằng các phần tử con sẽ hiển thị trên phần tử có lớp mờ */
+}
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-bar {
+    background-color: #FFF7F5;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Căn giữa các phần tử và chia đều khoảng cách */
+}
+
+
+.search-input {
+    display: flex;
+    flex-direction: column;
+    /* Hiển thị các phần tử con theo chiều dọc */
+    align-items: flex-start;
+    /* Căn trái các phần tử con */
+}
+
+.search-input label {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.search-input input[type="text"],
+.search-input input[type="date"],
+.search-input input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f1673C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+.label-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-input label {
+    margin-right: 10px;
+}
+
+.search-bar button {
+    margin-top: 10px;
+    /* Khoảng cách giữa các trường nhập và nút tìm kiếm */
+    padding: 10px 20px;
+    background-color: #f1673C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e74c3c;
+}
+
+.text-center {
+    text-align: center;
+    color: #1C6A44
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa các card theo trục ngang */
+    flex-wrap: wrap;
+    /* Cho phép các card chuyển dòng khi không đủ không gian */
+}
+
+.card {
+    border: 1px solid #ccc;
+    /* Viền xám */
+    border-radius: 10px;
+    /* Bo tròn các góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bóng */
+    padding: 20px;
+    /* Khoảng cách nội dung từ viền */
+    width: calc(27% - 10px);
+    /* Độ rộng của mỗi card, trừ đi khoảng cách giữa các card */
+    margin: 0 30px 50px;
+    /* Khoảng cách giữa các card và lề dưới */
+    float: left
+}
+
+
+.card:first-child {
+    margin-left: 0;
+    /* Loại bỏ lề trái của card đầu tiên */
+}
+
+.card:last-child {
+    margin-right: 0;
+    /* Loại bỏ lề phải của card cuối cùng */
+}
+
+.card-img {
+    grid-row: 1;
+    /* Ảnh nằm ở hàng 1 */
+}
+
+.card-body {
+    grid-row: 2 / 5;
+    /* Thân card từ hàng 2 đến hàng 5 */
+    padding: 10px;
+}
+
+.list-group {
+    grid-row: 3 / 5;
+    /* Danh sách từ hàng 3 đến hàng 5 */
+    padding: 0;
+    /* Loại bỏ padding của danh sách */
+    margin-top: 10px;
+    /* Khoảng cách giữa danh sách và phần thân */
+}
+
+.list-group-item {
+    border-bottom: 1px solid #ccc;
+    /* Viền xám ngăn cách giữa các mục */
+}

@@ -1,0 +1,123 @@
+<%- include('../partials/header', {title:'Trang chủ'}) %>
+
+
+    <section id="intro">
+        <div class="container">
+            <h1>Đặt vé xe trực tuyến với FutaBus</h1>
+            <p>FutaBus là dịch vụ xe buýt chất lượng cao, đem lại trải nghiệm tuyệt vời cho hành khách.</p>
+            <a href="#" class="btn">Đặt vé ngay</a>
+        </div>
+    </section>
+
+    <div class="search-bar">
+        <div class="search-input">
+            <label for="from">Điểm đi:</label>
+            <input type="text" id="from" placeholder="Nhập điểm đi...">
+        </div>
+        <div class="search-input">
+            <label for="to">Điểm đến:</label>
+            <input type="text" id="to" placeholder="Nhập điểm đến...">
+        </div>
+        <div class="search-input">
+            <label for="departure-date">Ngày khởi hành:</label>
+            <input type="date" id="departure-date" placeholder="Ngày đi">
+        </div>
+        <div class="search-input">
+            <label for="quantity">Số vé:</label>
+            <input type="number" id="quantity" placeholder="Số vé">
+        </div>
+        <button onclick="search()">Tìm kiếm</button>
+    </div>
+
+    <section id="routes">
+        <div class="container">
+            <h2 class="text-center">Tuyến xe phổ biến</h2>
+            <div clas="card-container">
+                <div class="route">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="..." class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="item">
+                                <h5 class="item-title">Item 1</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <hr> <!-- Đường chia giữa các item -->
+                            <div class="item">
+                                <h5 class="item-title">Item 2</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <hr> <!-- Đường chia giữa các item -->
+                            <div class="item">
+                                <h5 class="item-title">Item 3</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="..." class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="item">
+                                <h5 class="item-title">Item 1</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <hr> <!-- Đường chia giữa các item -->
+                            <div class="item">
+                                <h5 class="item-title">Item 2</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <hr> <!-- Đường chia giữa các item -->
+                            <div class="item">
+                                <h5 class="item-title">Item 3</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="..." class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="item">
+                                <h5 class="item-title">Item 1</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <hr> <!-- Đường chia giữa các item -->
+                            <div class="item">
+                                <h5 class="item-title">Item 2</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <hr> <!-- Đường chia giữa các item -->
+                            <div class="item">
+                                <h5 class="item-title">Item 3</h5>
+                                <p class="item-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
