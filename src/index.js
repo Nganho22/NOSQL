@@ -4,6 +4,7 @@ const morgan = require('morgan')
 require('dotenv').config()
 const ejs = require('ejs')
 const app = express()
+const bodyParser = require('body-parser')
 const port = 3000
 
 app.use(
@@ -14,7 +15,9 @@ app.use(
 app.use(express.static(path.join(__dirname, 'public')));
 
 const route = require('./routes')
-app.use(express.json())
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(morgan('combined'))
 
 

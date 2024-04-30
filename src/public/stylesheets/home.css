@@ -84,7 +84,7 @@ nav ul li a:hover {
 .custom-button {
     padding: 0;
     background: none;
-    border: none;
+    border: white;
     cursor: pointer;
 }
 
@@ -247,44 +247,47 @@ button:hover {
     padding: 20px;
     /* Khoảng cách nội dung từ viền */
     width: calc(27% - 10px);
-    /* Độ rộng của mỗi card, trừ đi khoảng cách giữa các card */
-    margin: 0 30px 50px;
-    /* Khoảng cách giữa các card và lề dưới */
-    float: left
-}
-
-
-.card:first-child {
-    margin-left: 0;
-    /* Loại bỏ lề trái của card đầu tiên */
-}
-
-.card:last-child {
-    margin-right: 0;
-    /* Loại bỏ lề phải của card cuối cùng */
-}
-
-.card-img {
-    grid-row: 1;
-    /* Ảnh nằm ở hàng 1 */
-}
-
-.card-body {
-    grid-row: 2 / 5;
-    /* Thân card từ hàng 2 đến hàng 5 */
-    padding: 10px;
-}
-
-.list-group {
-    grid-row: 3 / 5;
-    /* Danh sách từ hàng 3 đến hàng 5 */
-    padding: 0;
-    /* Loại bỏ padding của danh sách */
-    margin-top: 10px;
-    /* Khoảng cách giữa danh sách và phần thân */
-}
-
-.list-group-item {
-    border-bottom: 1px solid #ccc;
-    /* Viền xám ngăn cách giữa các mục */
-}
+        /* Độ rộng của mỗi card, trừ đi khoảng cách giữa các card */
+        margin: 0 30px 50px;
+        /* Khoảng cách giữa các card và lề dưới */
+        float: left
+    }
+    
+    
+    .card:first-child {
+        margin-left: 0;
+        /* Loại bỏ lề trái của card đầu tiên */
+    }
+    
+    .card:last-child {
+        margin-right: 0;
+        /* Loại bỏ lề phải của card cuối cùng */
+    }
+    
+    .card-img img {
+        width: 100%; /* Đảm bảo rằng ảnh sẽ lấp đầy toàn bộ phần tử chứa nó */
+        height: auto; /* Cho phép chiều cao tự động điều chỉnh theo tỷ lệ của ảnh */
+    }
+    
+    
+    .card-body {
+        grid-row: 2 / 5;
+        /* Thân card từ hàng 2 đến hàng 5 */
+        padding: 10px;
+    }
+    
+    .list-group {
+        grid-row: 3 / 5;
+        /* Danh sách từ hàng 3 đến hàng 5 */
+        padding: 0;
+        /* Loại bỏ padding của danh sách */
+        margin-top: 10px;
+        /* Khoảng cách giữa danh sách và phần thân */
+    }
+    
+    .list-group-item {
+        border-bottom: 1px solid #ccc;
+        /* Viền xám ngăn cách giữa các mục */
+    }
+    
+    
