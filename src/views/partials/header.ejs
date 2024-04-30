@@ -19,7 +19,11 @@
                 <button class="custom-button"><img src="/img/vn.png" class="rounded-image"></button>
             </div>
             <div class="logo">
-                <img src="/img/logo.png" alt="FutaBus Logo">
+                <% if (selectedOption === 'nosql') { %>
+                    <img src="/img/logo.png" alt="FutaBus Logo" onclick="window.location.href='/nosql'">
+                <% } else { %>
+                    <img src="/img/logo.png" alt="FutaBus Logo" onclick="window.location.href='/sql'">
+                <% } %>
             </div>
             <div class="right-buttons">
                 <% if (selectedOption === 'nosql') { %>
