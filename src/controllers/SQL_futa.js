@@ -1,6 +1,6 @@
 const { connectToMSSQL } = require('../config/mssqlDB');
 
-let getDeXuatChuyenXe = async (req, res) => {
+let gethomepage = async (req, res) => {
     let pool;
     try {
         pool = await connectToMSSQL();
@@ -29,11 +29,11 @@ let GetLoginPage = async (req, res) => {
     return res.render('pages/loginPage.ejs', { selectedOption: 'sql' });
 }
 let GetDatVePage = async (req, res) => {
-    return res.render('pages/DatVe.ejs', {selectedOption: 'sql' });
+    return res.render('pages/DatVe.ejs', { selectedOption: 'sql' });
 }
 
 module.exports = {
-    getDeXuatChuyenXe,
+    gethomepage,
     GetLoginPage,
     GetDatVePage
 };

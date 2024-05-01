@@ -3,7 +3,6 @@ const { createDriver } = require('../config/neo4jDB');
 let gethomepage = async (req, res) => {
     var driver = createDriver();
     var session = driver.session();
-
     try {
         const result = await session.run('MATCH (c:KhoaHoc) WHERE c.Buoi > 32 RETURN c.Ten as Ten, c.Buoi as Buoi ORDER BY c.Buoi DESC;');
         
@@ -11,7 +10,6 @@ let gethomepage = async (req, res) => {
             Ten: record.get('Ten'),
             Buoi: record.get('Buoi').toNumber()
         }));
-        
         console.log('TuyenXes:', TuyenXes);
         
         return res.render('pages/home.ejs', { TuyenXes: TuyenXes, selectedOption: 'nosql' }); // Change 'nosql' to 'sql' if SQL is selected
