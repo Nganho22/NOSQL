@@ -114,9 +114,16 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.rounded-image {
+.rounded-image-VN {
     border-radius: 50%;
     overflow: hidden;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background: none;
+    border: white;
+    cursor: pointer;
+    margin-left: 25px;
 }
 
 body {

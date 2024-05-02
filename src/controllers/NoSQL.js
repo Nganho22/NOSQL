@@ -2,9 +2,11 @@ const { createDriver } = require('../config/neo4jDB');
 const connectToMongoDB = require('../config/connectMongoDB');
 const mongoose = require('mongoose');
 let gethomepage = async (req, res) => {
+    
     var driver = createDriver();
-    var session = driver.session();
+    var session = driver.session({ database: 'futa' });
     try {
+
         const result = await session.run('MATCH (c:KhoaHoc) WHERE c.Buoi > 32 RETURN c.Ten as Ten, c.Buoi as Buoi ORDER BY c.Buoi DESC;');
 
         const TuyenXes = result.records.map(record => ({
@@ -24,7 +26,16 @@ let gethomepage = async (req, res) => {
 };
 
 let GetLoginPage = async (req, res) => {
-    return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
+    const Lichtrinh = {
+        loaixe: "A",
+        quangduong: "hhhh",
+        diemDi: "123",
+        diemDen: "456",
+        thoiGian: "9h15",
+        giaVe: "150k"
+    }
+    const TuyenXes = [Lichtrinh];
+    return res.render('pages/TuyenXePage.ejs', { TuyenXes: TuyenXes, tuyenxe: Lichtrinh, selectedOption: 'nosql' });
 };
 
 let GetDatVePage = async (req, res) => {
