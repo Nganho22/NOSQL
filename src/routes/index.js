@@ -8,7 +8,7 @@ function route(app) {
     app.use('/', siteRoute)
 
     app.use((req, res, next) => {
-        next(createError.NotFound('This route does not exist.'))
+        res.send('This route does not exist.')
     })
 
     app.use((err, req, res, next) => {

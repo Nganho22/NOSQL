@@ -3,41 +3,69 @@
 
     <body>
         <link rel="stylesheet" href="/stylesheets/lichtrinh.css">
-        <div class="search-container-tuyen-xe">
-            <div class="search-bar-tuyen-xe">
-                <input type="text" id="diem-di-input" placeholder="Nhập điểm đi...">
-                <input type="text" id="diem-den-input" placeholder="Nhập điểm đến...">
-                <button class="search-bar-tuyen-xe">Tìm Tuyến xe</button>
+        <% if (selectedOption==='nosql' ) { %>
+            <div class="search-container-tuyen-xe">
+                <form action="/nosql/tuyenxe" method="POST"> <!-- Sử dụng phương thức POST và cập nhật action -->
+                    <div class="search-bar-tuyen-xe">
+                        <input type="text" name="diemDi" id="diem-di-input" placeholder="Nhập điểm đi...">
+                        <input type="text" name="diemDen" id="diem-den-input" placeholder="Nhập điểm đến...">
+                        <button type="submit" class="search-bar-tuyen-xe">Tìm Tuyến xe</button>
+                        <!-- Sử dụng button submit để gửi form -->
+                    </div>
+                </form>
             </div>
-        </div>
-        <div class="bottom-margin">
-            <div class="container">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span class="item">Tuyến xe</span>
-                    <span class="item">Loại xe</span>
-                    <span class="item">Quãng đường</span>
-                    <span class="item" style="margin-right: 25px;">Thời gian hành trình</span>
-                    <span class="item" style="margin-left: 15px;">Giá vé</span>
-                </li>
-            </div>
-        </div>
-        <div class="bottom-margin">
-            <div class="container">
-                <ul class="list-group-item d-flex justify-content-between align-items-center">
-                    <% TuyenXes.forEach(function(tuyenXe) { %> 
-                        <div class="grid-container">
-                            <div class="item" style="width: 260px;"><%= tuyenXe.diemDi %> * <%= tuyenXe.diemDen %></div>
-                            <div class="item" style="width: 90px; margin-left: 35px;"><%= tuyenXe.loaixe %></div>
-                            <div class="item" style="width: 120px; margin-left: -20px;"><%= tuyenXe.quangduong %></div>
-                            <div class="item" style="width: 100px; margin-left: -20px;"><%= tuyenXe.thoiGian %></div>
-                            <div class="item" style="width: 233px; margin-left: 0.01%;"><%= tuyenXe.giaVe %></div>
-                            <button class="custom-button1" >Tìm chuyến xe</button>
+            <% } else { %>
+                <div class="search-container-tuyen-xe">
+                    <form action="/sql/tuyenxe" method="POST"> <!-- Sử dụng phương thức POST và cập nhật action -->
+                        <div class="search-bar-tuyen-xe">
+                            <input type="text" name="diemDi" id="diem-di-input" placeholder="Nhập điểm đi...">
+                            <input type="text" name="diemDen" id="diem-den-input" placeholder="Nhập điểm đến...">
+                            <button type="submit" class="search-bar-tuyen-xe">Tìm Tuyến xe</button>
+                            <!-- Sử dụng button submit để gửi form -->
                         </div>
-                    <% }); %>
-                </ul>
-            </div>
-        </div>
-        
+                    </form>
+                </div>
+                <% } %>
+
+                    <div class="bottom-margin">
+                        <div class="container">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="item">Tuyến xe</span>
+                                <span class="item">Loại xe</span>
+                                <span class="item">Quãng đường</span>
+                                <span class="item" style="margin-right: 25px;">Thời gian hành trình</span>
+                                <span class="item" style="margin-left: 15px;">Giá vé</span>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="bottom-margin">
+                        <div class="container">
+                            <% TuyenXes.forEach(function(tuyenXe) { %>
+                                <ul class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="grid-container">
+                                        <div class="item" style="width: 260px;">
+                                            <%= tuyenXe.HanhTrinh %>
+                                        </div>
+                                        <div class="item" style="width: 90px; margin-left: 35px;">
+                                            <%= tuyenXe.LoaiXe %>
+                                        </div>
+                                        <div class="item" style="width: 100px; margin-left: -20px;">
+                                            <%= tuyenXe.QuangDuong %>km
+                                        </div>
+                                        <div class="item" style="width: 150px; margin-left: -20px;">
+                                            <%= tuyenXe.ThoiGian %>
+                                        </div>
+                                        <div class="item" style="width: 233px; margin-left: 0.01%;">
+                                            <%= tuyenXe.GiaVe %>
+                                        </div>
+                                        <button class="custom-button1">Tìm chuyến xe</button>
+                                    </div>
+
+                                </ul>
+                                <% }); %>
+                        </div>
+                    </div>
+
     </body>
 
     </html>

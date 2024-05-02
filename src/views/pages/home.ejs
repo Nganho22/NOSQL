@@ -50,7 +50,7 @@
 
         <section id="routes">
             <div class="container">
-                <h2 class="text-center">Tuyến xe phổ biến</h2>
+                <h2 class="text-center">Các tuyến xe phổ biến</h2>
                 <div clas="card-container">
                     <div class="route">
                         <div class="card">
@@ -58,27 +58,17 @@
                                 <img src="/img/exp.jpg" class="card-img-top" alt="..." width="250" height="165">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Các tuyến xe được đi nhiều nhất</h5>
-                                <div class="item">
-                                    <h5 class="item-title">Item 1</h5>
-                                    <p class="item-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <hr> <!-- Đường chia giữa các item -->
-                                <div class="item">
-                                    <h5 class="item-title">Item 2</h5>
-                                    <p class="item-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <hr> <!-- Đường chia giữa các item -->
-                                <div class="item">
-                                    <h5 class="item-title">Item 3</h5>
-                                    <p class="item-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
+                                <h5 class="card-title">Các tuyến xe có giá rẻ nhất</h5>
+                                <% TuyenXes.forEach(function(tuyenXe) { %>
+                                    <hr> <!-- Đường chia giữa các item -->
+                                    <div class="item">
+                                        <h5 class="item-title">
+                                            <%= tuyenXe.Ten %>
+                                        </h5>
+                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %>
+                                        </p>
+                                    </div>
+                                    <% }); %>
                             </div>
                         </div>
 
@@ -87,14 +77,17 @@
                                 <img src="/img/exp2.jpg" class="card-img-top" alt="..." width="250" height="165">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Các tuyến xe được đi nhiều nhất</h5>
+                                <h5 class="card-title">Các tuyến xe từ Hồ Chí Minh</h5>
                                 <% TuyenXes.forEach(function(tuyenXe) { %>
                                     <hr> <!-- Đường chia giữa các item -->
                                     <div class="item">
-                                        <h5 class="item-title"><%= tuyenXe.Ten %></h5>
-                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %></p>
+                                        <h5 class="item-title">
+                                            <%= tuyenXe.Ten %>
+                                        </h5>
+                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %>
+                                        </p>
                                     </div>
-                                <% }); %>
+                                    <% }); %>
                             </div>
                         </div>
 
@@ -103,27 +96,17 @@
                                 <img src="/img/exp1.jpg" class="card-img-top" alt="..." width="300" height="200">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Những tuyến xe còn lại trong ngày</h5>
-                                <div class="item">
-                                    <h5 class="item-title">Item 1</h5>
-                                    <p class="item-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <hr> <!-- Đường chia giữa các item -->
-                                <div class="item">
-                                    <h5 class="item-title">Item 2</h5>
-                                    <p class="item-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
-                                <hr> <!-- Đường chia giữa các item -->
-                                <div class="item">
-                                    <h5 class="item-title">Item 3</h5>
-                                    <p class="item-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
-                                </div>
+                                <h5 class="card-title">Các tuyến xe bạn đã từng đi</h5>
+                                <% TuyenXes.forEach(function(tuyenXe) { %>
+                                    <hr> <!-- Đường chia giữa các item -->
+                                    <div class="item">
+                                        <h5 class="item-title">
+                                            <%= tuyenXe.Ten %>
+                                        </h5>
+                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %>
+                                        </p>
+                                    </div>
+                                    <% }); %>
                             </div>
                         </div>
                     </div>

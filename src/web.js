@@ -7,6 +7,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const port = 3000
 
+
 app.use(
     express.urlencoded({
         extended: true, //chọn qs library để parsing url và encoding data
