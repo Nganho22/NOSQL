@@ -61,7 +61,7 @@ CREATE TABLE Xe (
 -- LoaiXe
 CREATE TABLE LoaiXe (
     IDLoaiXe VARCHAR(20),
-    TenLoaiXe VARCHAR(50),
+    TenLoaiXe NVARCHAR(50),
     PRIMARY KEY (IDLoaiXe)
 );
 

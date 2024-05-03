@@ -4,7 +4,7 @@ const config = {
     user: 'sa',
     password: '123456',
     server: 'ABC1',
-    database: 'QLDH',
+    database: 'FUTA',
     driver: "msnodesqlv8",
     options: {
         trustedConnection: true,
