@@ -1,7 +1,7 @@
 const { createDriver } = require('../config/neo4jDB');
 const connectToMongoDB = require('../config/connectMongoDB');
 const mongoose = require('mongoose');
-const {connectToRedis} = require('../config/redisDB');
+const { connectToRedis } = require('../config/redisDB');
 let gethomepage = async (req, res) => {
 
     var driver = createDriver();
@@ -15,7 +15,7 @@ let gethomepage = async (req, res) => {
             ThoiGian: record.get('tuyen.ThoiGian'),
             GiaVe: record.get('tuyen.GiaVe'),
         }));
-        
+
         const result2 = await session.run("MATCH (tpden:ThanhPho) <-[:Den]-(t:Tuyen)-[:XuatPhatTu]->(tpdi:ThanhPho {TenThanhPho: 'Đà Lạt'}) WITH tpden, tpdi, t ORDER BY tpdi.TenThanhPho, tpden.TenThanhPho WITH tpden, tpdi, COLLECT(t)[0] AS tuyen RETURN tpden.TenThanhPho, tuyen.QuangDuong, tuyen.ThoiGian, tuyen.GiaVe LIMIT 3;");
         const TuyenXeDL = result2.records.map(record => ({
             Den: record.get('tpden.TenThanhPho'),
@@ -100,7 +100,7 @@ let GetLoginPage = async (req, res) => {
         await redisClient.connect()
         let userSession = await redisClient.hGetAll('cart:1234_01');
         console.log(JSON.stringify(userSession, null, 2));
-
+        redisClient.quit()
         // Render trang loginPage
         return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
     } catch (error) {
