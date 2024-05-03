@@ -2,12 +2,13 @@ const { createDriver } = require('../config/neo4jDB');
 const connectToMongoDB = require('../config/connectMongoDB');
 const mongoose = require('mongoose');
 const { connectToRedis } = require('../config/redisDB');
+
 let gethomepage = async (req, res) => {
 
     var driver = createDriver();
     var session = driver.session({ database: 'futa' });
     try {
-
+        const startTime = new Date().getTime();
         const result1 = await session.run("MATCH (tpden:ThanhPho) <-[:Den]-(t:Tuyen)-[:XuatPhatTu]->(tpdi:ThanhPho {TenThanhPho: 'TP. Hồ Chí Minh'}) WITH tpden, tpdi, t ORDER BY tpdi.TenThanhPho, tpden.TenThanhPho WITH tpden, tpdi, COLLECT(t)[0] AS tuyen RETURN tpden.TenThanhPho, tuyen.QuangDuong, tuyen.ThoiGian, tuyen.GiaVe LIMIT 3;");
         const TuyenXeHCM = result1.records.map(record => ({
             Den: record.get('tpden.TenThanhPho'),
@@ -31,6 +32,10 @@ let gethomepage = async (req, res) => {
             ThoiGian: record.get('tuyen.ThoiGian'),
             GiaVe: record.get('tuyen.GiaVe'),
         }));
+        const endTime = new Date().getTime(); // Thời gian kết thúc truy vấn
+        const queryTime = endTime - startTime; // Thời gian thực hiện truy vấn
+
+        console.log('Thời gian truy vấn:', queryTime, 'ms');
         return res.render('pages/home.ejs', { TuyenXe1: TuyenXeHCM, TuyenXe2: TuyenXeDL, TuyenXe3: TuyenXeDN, selectedOption: 'nosql' }); // Change 'nosql' to 'sql' if SQL is selected
     } catch (error) {
         console.error('Error retrieving data:', error);
@@ -59,6 +64,7 @@ let GetTuyenXe = async (req, res) => {
         // Nếu không, sử dụng giá trị như bình thường
         console.log("di:", diemDen);
     }
+
     var driver = createDriver();
     var session = driver.session({ database: 'futa' });
     let cypher = "MATCH (tpden:ThanhPho";
@@ -72,6 +78,7 @@ let GetTuyenXe = async (req, res) => {
     cypher += "), (t)-[:dung]->(lx:LoaiXe) RETURN tpdi.TenThanhPho +' -> ' +tpden.TenThanhPho AS HanhTrinh, lx.TenLoaiXe, t.QuangDuong, t.ThoiGian, t.GiaVe ORDER BY tpdi.TenThanhPho";
 
     try {
+        const startTime = new Date().getTime();
         const result = await session.run(cypher);
 
         const TuyenXes = result.records.map(record => ({
@@ -81,7 +88,10 @@ let GetTuyenXe = async (req, res) => {
             ThoiGian: record.get('t.ThoiGian'),
             GiaVe: record.get('t.GiaVe')
         }));
-        console.log("cypher", cypher)
+        //console.log("cypher", cypher)
+        const endTime = new Date().getTime(); // Thời gian kết thúc truy vấn
+        const queryTime = endTime - startTime; // Thời gian thực hiện truy vấn
+        console.log('Thời gian truy vấn:', queryTime, 'ms');
         return res.render('pages/TuyenXePage.ejs', { TuyenXes: TuyenXes, selectedOption: 'nosql', di: diemDi, den: diemDen });
     } catch (error) {
         console.error('Error retrieving data:', error);

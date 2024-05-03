@@ -4,8 +4,8 @@ const { connectToMSSQL, sql } = require('../config/mssqlDB');
 let gethomepage = async (req, res) => {
     let pool;
     try {
+        const startTime = new Date().getTime();
         pool = await connectToMSSQL();
-
         const result1 = await pool.request().query("EXECUTE XEM_TuyenXe_Theo_TPDi @TP =N'TP. Hồ Chí Minh'")
 
         const TuyenXeHCM = result1.recordset.map(record => ({
@@ -33,7 +33,10 @@ let gethomepage = async (req, res) => {
             ThoiGian: record.ThoiGian,
             GiaVe: record.GiaVe,
         }));
+        const endTime = new Date().getTime(); // Thời gian kết thúc truy vấn
+        const queryTime = endTime - startTime; // Thời gian thực hiện truy vấn
 
+        console.log('Thời gian truy vấn:', queryTime, 'ms');
         return res.render('pages/home.ejs', { TuyenXe1: TuyenXeHCM, TuyenXe2: TuyenXeDL, TuyenXe3: TuyenXeDN, selectedOption: 'sql' }); // Change 'nosql' to 'sql' if SQL is selected
     } catch (error) {
         console.error('Error executing SQL query:', error);
@@ -75,7 +78,7 @@ let GetTuyenXe = async (req, res) => {
     // Kiểm tra xem diemDi và diemDen có phải là chuỗi không
     let pool;
     try {
-        pool = await connectToMSSQL();
+
         let query = 'EXECUTE XEM_TT_TuyenXe ';
         if (diemDen) {
             query += `@TPDen = N'${diemDen}', `;
@@ -87,6 +90,8 @@ let GetTuyenXe = async (req, res) => {
         } else {
             query += '@TPDi = NULL';
         }
+        const startTime = new Date().getTime();
+        pool = await connectToMSSQL();
         const result = await pool.request().query(query);
         console.log(query)
         const TuyenXe1 = result.recordset.map(record => ({
@@ -97,7 +102,10 @@ let GetTuyenXe = async (req, res) => {
             ThoiGian: record.ThoiGianAsText
         }));
         //console.log('TuyenXe1:', TuyenXe1);
+        const endTime = new Date().getTime(); // Thời gian kết thúc truy vấn
+        const queryTime = endTime - startTime; // Thời gian thực hiện truy vấn
 
+        console.log('Thời gian truy vấn:', queryTime, 'ms');
         return res.render('pages/TuyenXePage.ejs', { TuyenXes: TuyenXe1, selectedOption: 'sql', di: diemDi, den: diemDen });
     } catch (error) {
         console.error('Error executing SQL query:', error);
