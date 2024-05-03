@@ -1,21 +1,37 @@
 const { createDriver } = require('../config/neo4jDB');
 const connectToMongoDB = require('../config/connectMongoDB');
 const mongoose = require('mongoose');
+const {connectToRedis} = require('../config/redisDB');
 let gethomepage = async (req, res) => {
 
     var driver = createDriver();
     var session = driver.session({ database: 'futa' });
     try {
 
-        const result = await session.run('MATCH (c:KhoaHoc) WHERE c.Buoi > 32 RETURN c.Ten as Ten, c.Buoi as Buoi ORDER BY c.Buoi DESC;');
-
-        const TuyenXes = result.records.map(record => ({
-            Ten: record.get('Ten'),
-            Buoi: record.get('Buoi').toNumber()
+        const result1 = await session.run("MATCH (tpden:ThanhPho) <-[:Den]-(t:Tuyen)-[:XuatPhatTu]->(tpdi:ThanhPho {TenThanhPho: 'TP. Hồ Chí Minh'}) WITH tpden, tpdi, t ORDER BY tpdi.TenThanhPho, tpden.TenThanhPho WITH tpden, tpdi, COLLECT(t)[0] AS tuyen RETURN tpden.TenThanhPho, tuyen.QuangDuong, tuyen.ThoiGian, tuyen.GiaVe LIMIT 3;");
+        const TuyenXeHCM = result1.records.map(record => ({
+            Den: record.get('tpden.TenThanhPho'),
+            QuangDuong: record.get('tuyen.QuangDuong'),
+            ThoiGian: record.get('tuyen.ThoiGian'),
+            GiaVe: record.get('tuyen.GiaVe'),
         }));
-        console.log('TuyenXes:', TuyenXes);
+        
+        const result2 = await session.run("MATCH (tpden:ThanhPho) <-[:Den]-(t:Tuyen)-[:XuatPhatTu]->(tpdi:ThanhPho {TenThanhPho: 'Đà Lạt'}) WITH tpden, tpdi, t ORDER BY tpdi.TenThanhPho, tpden.TenThanhPho WITH tpden, tpdi, COLLECT(t)[0] AS tuyen RETURN tpden.TenThanhPho, tuyen.QuangDuong, tuyen.ThoiGian, tuyen.GiaVe LIMIT 3;");
+        const TuyenXeDL = result2.records.map(record => ({
+            Den: record.get('tpden.TenThanhPho'),
+            QuangDuong: record.get('tuyen.QuangDuong'),
+            ThoiGian: record.get('tuyen.ThoiGian'),
+            GiaVe: record.get('tuyen.GiaVe'),
+        }));
 
-        return res.render('pages/home.ejs', { TuyenXes: TuyenXes, selectedOption: 'nosql' }); // Change 'nosql' to 'sql' if SQL is selected
+        const result3 = await session.run("MATCH (tpden:ThanhPho) <-[:Den]-(t:Tuyen)-[:XuatPhatTu]->(tpdi:ThanhPho {TenThanhPho: 'Đà Nẵng'}) WITH tpden, tpdi, t ORDER BY tpdi.TenThanhPho, tpden.TenThanhPho WITH tpden, tpdi, COLLECT(t)[0] AS tuyen RETURN tpden.TenThanhPho, tuyen.QuangDuong, tuyen.ThoiGian, tuyen.GiaVe LIMIT 3;");
+        const TuyenXeDN = result3.records.map(record => ({
+            Den: record.get('tpden.TenThanhPho'),
+            QuangDuong: record.get('tuyen.QuangDuong'),
+            ThoiGian: record.get('tuyen.ThoiGian'),
+            GiaVe: record.get('tuyen.GiaVe'),
+        }));
+        return res.render('pages/home.ejs', { TuyenXe1: TuyenXeHCM, TuyenXe2: TuyenXeDL, TuyenXe3: TuyenXeDN, selectedOption: 'nosql' }); // Change 'nosql' to 'sql' if SQL is selected
     } catch (error) {
         console.error('Error retrieving data:', error);
         return res.status(500).send('Internal Server Error');
@@ -78,8 +94,25 @@ let GetTuyenXe = async (req, res) => {
 
 
 let GetLoginPage = async (req, res) => {
-    return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
+    try {
+        // Tạo một client Redis
+        const redisClient = connectToRedis()
+        await redisClient.connect()
+        let userSession = await redisClient.hGetAll('cart:1234_01');
+        console.log(JSON.stringify(userSession, null, 2));
+
+        // Render trang loginPage
+        return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
+    } catch (error) {
+        // Xử lý lỗi nếu có
+        console.error('Error:', error);
+        return res.status(500).send('Internal Server Error');
+    }
 };
+
+
+
+
 
 let GetDatVePage = async (req, res) => {
     try {

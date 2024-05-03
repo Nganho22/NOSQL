@@ -58,14 +58,20 @@
                                 <img src="/img/exp.jpg" class="card-img-top" alt="..." width="250" height="165">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Các tuyến xe có giá rẻ nhất</h5>
-                                <% TuyenXes.forEach(function(tuyenXe) { %>
+                                <h5 class="card-title">Các tuyến xe từ Tp.Hồ Chí Minh</h5>
+                                <% TuyenXe1.forEach(function(tuyenXe1) { %>
                                     <hr> <!-- Đường chia giữa các item -->
                                     <div class="item">
                                         <h5 class="item-title">
-                                            <%= tuyenXe.Ten %>
+                                            <div style="color: #00613D;">
+                                                <%= tuyenXe1.Den %>
+                                            </div>
+                                            <div style="font-size: smaller; color: #7D8289">
+                                                <%= tuyenXe1.GiaVe %>đ
+                                            </div>
                                         </h5>
-                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %>
+                                        <p class="item-text">
+                                            <%= tuyenXe1.QuangDuong %>km - <%= tuyenXe1.ThoiGian %>
                                         </p>
                                     </div>
                                     <% }); %>
@@ -77,14 +83,20 @@
                                 <img src="/img/exp2.jpg" class="card-img-top" alt="..." width="250" height="165">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Các tuyến xe từ Hồ Chí Minh</h5>
-                                <% TuyenXes.forEach(function(tuyenXe) { %>
+                                <h5 class="card-title">Các tuyến xe từ Đà Lạt</h5>
+                                <% TuyenXe2.forEach(function(tuyenXe2) { %>
                                     <hr> <!-- Đường chia giữa các item -->
                                     <div class="item">
                                         <h5 class="item-title">
-                                            <%= tuyenXe.Ten %>
+                                            <div style="color: #00613D;">
+                                                <%= tuyenXe2.Den %>
+                                            </div>
+                                            <div style="font-size: smaller; color: #7D8289">
+                                                <%= tuyenXe2.GiaVe %>đ
+                                            </div>
                                         </h5>
-                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %>
+                                        <p class="item-text">
+                                            <%= tuyenXe2.QuangDuong %>km - <%= tuyenXe2.ThoiGian %>
                                         </p>
                                     </div>
                                     <% }); %>
@@ -96,14 +108,20 @@
                                 <img src="/img/exp1.jpg" class="card-img-top" alt="..." width="300" height="200">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Các tuyến xe bạn đã từng đi</h5>
-                                <% TuyenXes.forEach(function(tuyenXe) { %>
+                                <h5 class="card-title">Các tuyến xe từ Đà Nẵng</h5>
+                                <% TuyenXe3.forEach(function(tuyenXe3) { %>
                                     <hr> <!-- Đường chia giữa các item -->
                                     <div class="item">
                                         <h5 class="item-title">
-                                            <%= tuyenXe.Ten %>
+                                            <div style="color: #00613D;">
+                                                <%= tuyenXe3.Den %>
+                                            </div>
+                                            <div style="font-size: smaller; color: #7D8289">
+                                                <%= tuyenXe3.GiaVe %>đ
+                                            </div>
                                         </h5>
-                                        <p class="item-text">Buổi: <%= tuyenXe.Buoi %>
+                                        <p class="item-text">
+                                            <%= tuyenXe3.QuangDuong %>km - <%= tuyenXe3.ThoiGian %>
                                         </p>
                                     </div>
                                     <% }); %>

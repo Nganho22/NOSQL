@@ -13,7 +13,7 @@ let gethomepage = async (req, res) => {
 
         console.log('TuyenXes:', TuyenXes);
 
-        return res.render('pages/home.ejs', { TuyenXes: TuyenXes, selectedOption: 'sql' }); // Change 'nosql' to 'sql' if SQL is selected
+        return res.render('pages/home.ejs', { TuyenXe1: TuyenXes, TuyenXe2: TuyenXes, TuyenXe3: TuyenXes, selectedOption: 'sql' }); // Change 'nosql' to 'sql' if SQL is selected
     } catch (error) {
         console.error('Error executing SQL query:', error);
         return res.status(500).send('Internal Server Error');

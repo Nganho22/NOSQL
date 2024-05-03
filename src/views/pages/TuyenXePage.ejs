@@ -3,6 +3,15 @@
 
     <body>
         <link rel="stylesheet" href="/stylesheets/lichtrinh.css">
+        <h2 class="text-center" style="color: #EF6164;">Tìm Tuyến xe:
+            <% if ((di !==undefined && di !=='' ) ) { %>
+                Điểm đi: <%= di %>
+                    <% } %>
+
+                        <% if ((den !==undefined && den !=='' ) ) { %>
+                            Điểm đến: <%= den %>
+                                <% } %>
+        </h2>
         <% if (selectedOption==='nosql' ) { %>
             <div class="search-container-tuyen-xe">
                 <form action="/nosql/tuyenxe" method="POST"> <!-- Sử dụng phương thức POST và cập nhật action -->
