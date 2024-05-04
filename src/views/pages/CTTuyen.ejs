@@ -1,0 +1,79 @@
+<%- include('../partials/header', {title:'Tuyen Xe'}) %>
+    <html lang="VN">
+
+    <body>
+        <link rel="stylesheet" href="/stylesheets/cttuyen.css">
+        <h2 class="text-center" style="color: #EF6164;">Tìm Tuyến xe: <%= IDTuyen %>
+        </h2>
+        <% if (selectedOption==='nosql' ) { %>
+            <div class="search-container-tuyen-xe">
+                <form action="/nosql/tuyenxe" method="POST"> <!-- Sử dụng phương thức POST và cập nhật action -->
+                    <div class="search-bar-tuyen-xe">
+                        <input type="text" name="diemDi" id="diem-di-input" placeholder="Nhập điểm đi...">
+                        <input type="text" name="diemDen" id="diem-den-input" placeholder="Nhập điểm đến...">
+                        <button type="submit" class="search-bar-tuyen-xe">Tìm Tuyến xe</button>
+                        <!-- Sử dụng button submit để gửi form -->
+                    </div>
+                </form>
+            </div>
+            <% } else { %>
+                <div class="search-container-tuyen-xe">
+                    <form action="/sql/tuyenxe" method="POST"> <!-- Sử dụng phương thức POST và cập nhật action -->
+                        <div class="search-bar-tuyen-xe">
+                            <input type="text" name="diemDi" id="diem-di-input" placeholder="Nhập điểm đi...">
+                            <input type="text" name="diemDen" id="diem-den-input" placeholder="Nhập điểm đến...">
+                            <button type="submit" class="search-bar-tuyen-xe">Tìm Tuyến xe</button>
+                            <!-- Sử dụng button submit để gửi form -->
+                        </div>
+                    </form>
+                </div>
+                <% } %>
+
+                    <div class="bottom-margin">
+                        <div class="container">
+                            <% TuyenXes.forEach(function(tuyenXe) { %>
+                                <ul class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="card-container">
+                                        <div class="tuyen-card" onclick="chooseTuyen('<%= tuyenXe.IDTuyen %>')">
+                                            <p>Hành Trình: <%= tuyenXe.HanhTrinh %>
+                                            </p>
+                                            <p>Loại xe: <%= tuyenXe.LoaiXe %>
+                                            </p>
+                                            <p>Quãng Đường: <%= tuyenXe.QuangDuong %>km</p>
+                                            <p>Thời Gian: <%= tuyenXe.ThoiGian %>
+                                            </p>
+                                            <p>Giá Vé: <%= tuyenXe.GiaVe %>
+                                            </p>
+                                            <button class="custom-button1">Tìm chuyến xe</button>
+                                        </div>
+
+                                    </div>
+                                    <% }); %>
+                                        <div class="ben-di-card">
+                                            <p>Bến Đi</p>
+                                            <ul class="list-group">
+                                                <% BenDi.forEach(function(Di) { %>
+                                                    <li class="list-group-item">
+                                                        <%= Di.BenDi %>
+                                                    </li>
+                                                    <% }); %>
+                                            </ul>
+                                        </div>
+                                        <div class="ben-den-card">
+                                            <p>Bến Đến</p>
+                                            <ul class="list-group">
+                                                <% BenDen.forEach(function(Den) { %>
+                                                    <li class="list-group-item">
+                                                        <%= Den.BenDen %>
+                                                    </li>
+                                                    <% }); %>
+                                            </ul>
+                                        </div>
+                                </ul>
+                        </div>
+
+                    </div>
+
+    </body>
+
+    </html>

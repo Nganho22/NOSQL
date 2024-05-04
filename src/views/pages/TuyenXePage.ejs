@@ -47,14 +47,17 @@
                             </li>
                         </div>
                     </div>
+                    <% if (selectedOption==='sql' ) { %>
                     <div class="bottom-margin">
                         <div class="container">
+                            
                             <% TuyenXes.forEach(function(tuyenXe) { %>
                                 <ul class="list-group-item d-flex justify-content-between align-items-center">
                                     <div class="grid-container">
-                                        <div class="item" style="width: 260px;">
+    
+                                        <div class="item" style="width: 260px;" onclick="chooseTuyenSQL('<%= tuyenXe.IDTuyen %>')">
                                             <%= tuyenXe.HanhTrinh %>
-                                        </div>
+                                            </div>
                                         <div class="item" style="width: 90px; margin-left: 35px;">
                                             <%= tuyenXe.LoaiXe %>
                                         </div>
@@ -74,7 +77,46 @@
                                 <% }); %>
                         </div>
                     </div>
+                    <% } else { %>
+                        <div class="bottom-margin">
+                            <div class="container">
+                                
+                                <% TuyenXes.forEach(function(tuyenXe) { %>
+                                    <ul class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div class="grid-container">
+        
+                                            <div class="item" style="width: 260px;" onclick="chooseTuyenNoSQL('<%= tuyenXe.IDTuyen %>') ">
+                                                <%= tuyenXe.HanhTrinh %>
+                                                </div>
+                                            <div class="item" style="width: 90px; margin-left: 35px;">
+                                                <%= tuyenXe.LoaiXe %>
+                                            </div>
+                                            <div class="item" style="width: 100px; margin-left: -20px;">
+                                                <%= tuyenXe.QuangDuong %>km
+                                            </div>
+                                            <div class="item" style="width: 150px; margin-left: -20px;">
+                                                <%= tuyenXe.ThoiGian %>
+                                            </div>
+                                            <div class="item" style="width: 233px; margin-left: 0.01%;">
+                                                <%= tuyenXe.GiaVe %>
+                                            </div>
+                                            <button class="custom-button1">Tìm chuyến xe</button>
+                                        </div>
+    
+                                    </ul>
+                                    <% }); %>
+                            </div>
+                        </div>
+                        <% } %>
 
     </body>
+    <script>
+        function chooseTuyenSQL(IDTuyen, a) {
+            window.location.href = "/sql/getChiTietTuyen/" + IDTuyen;
+    }
+    function chooseTuyenNoSQL(IDTuyen, a) {
+            window.location.href = "/nosql/getChiTietTuyen/" + IDTuyen;
+    }
+    </script>
 
     </html>

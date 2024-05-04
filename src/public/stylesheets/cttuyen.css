@@ -1,0 +1,152 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF7F5;
+}
+
+.item {
+    margin-left: 0.01%; /* Khoảng cách 10px giữa các mục */
+}
+
+.item:first-child {
+    margin-right: 12%;
+     /* Khoảng cách 20px cho mục đầu tiên */
+}
+
+.item:last-child {
+    margin-right: 30%; /* Khoảng cách 20px cho mục đầu tiên */
+    margin-left: 10px;
+}
+
+
+.item-tuyenxe {
+    margin-left: 0.01%;
+    margin-right: 15%; /* Khoảng cách 10px giữa các mục */
+}
+.item-tuyenxe:first-child {
+    margin-right: 0.01%;
+    margin-left: 0px; /* Khoảng cách 20px cho mục đầu tiên */
+}
+
+.item-tuyenxe:last-child {
+    margin-right: 30%; /* Khoảng cách 20px cho mục đầu tiên */
+}
+
+.search-container-tuyen-xe {
+    width: 800px;
+    /* . max-width: 600px; Độ rộng tối đa của khung tìm kiếm */
+    margin: 0 auto;
+    /* Canh giữa khung tìm kiếm */
+    padding: 20px;
+    /* Khoảng cách nội dung với viền của khung tìm kiếm */
+    border: 1px solid #ccc;
+    /* Viền của khung tìm kiếm */
+    border-radius: 5px;
+    /* Bo tròn các góc của khung tìm kiếm */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Bóng cho khung tìm kiếm */
+}
+
+
+
+.search-bar-tuyen-xe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar-tuyen-xe input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFF7F5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-bar-tuyen-xe button {
+    padding: 10px 20px;
+    background-color: #fde5de;
+    color: #ef6164;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.search-bar-tuyen-xe button:hover {
+    background-color: #f1673c;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1102px;
+    height: 52px;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    border-radius: 5px;
+
+}
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Tạo lưới với các cột có độ rộng tối thiểu 150px và co giãn tự động */
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    gap: 5%;
+    margin-left: -12px;
+
+    /*  justify-content: flex-start; /* Các item bắt đầu từ trái sang phải */
+    /* margin-left: -12px; Đảm bảo item đầu tiên cách lề bên trái của card 12px */
+}
+
+
+.custom-button1 {
+    justify-self: end;
+    background-color: #EF6164;
+    /* Màu cam nhạt */
+    color: white;
+    /* Chữ đỏ */
+    padding: 5px 10px;
+    border-radius: 10px;
+    /* Bo góc */
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bottom-margin {
+    margin-top: 25px;
+}
+
+.header-margin {
+    margin-bottom: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 208px repeat(4, 1fr) auto; /* 5 cột và tự co giãn */
+    gap: 0; /* Khoảng cách giữa các mục */
+    border: none; /* Loại bỏ đường viền của bảng */
+}
+
+.item2 {
+    border: none; /* Loại bỏ đường viền của mỗi mục */
+    padding: 10px; /* Thêm padding cho mỗi mục */
+}

@@ -134,3 +134,27 @@ END;
 
 
 Go
+
+IF OBJECT_ID('Xem_DS_Ben_Den', 'P') IS NOT NULL
+    DROP PROCEDURE Xem_DS_Ben_Den;
+GO
+CREATE PROCEDURE Xem_DS_Ben_Den
+    @T NVARCHAR(100)
+AS
+BEGIN
+   SELECT B.TenBen AS 'BenDen' FROM TuyenBenDen TDEN, Ben B WHERE TDEN.IDTuyen =@T AND B.IDBen = TDEN.IDBenDen
+
+END;
+Go
+
+IF OBJECT_ID('Xem_DS_Ben_Di', 'P') IS NOT NULL
+    DROP PROCEDURE Xem_DS_Ben_Di;
+GO
+CREATE PROCEDURE Xem_DS_Ben_Di
+    @T NVARCHAR(100)
+AS
+BEGIN
+   SELECT B.TenBen AS 'BenDi' FROM TuyenBenDi TDi, Ben B WHERE TDi.IDTuyen =@T AND B.IDBen = TDi.IDBenDi
+
+END;
+Go

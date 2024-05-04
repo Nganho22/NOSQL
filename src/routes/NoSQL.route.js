@@ -3,6 +3,7 @@ const router = express.Router()
 const path = require('path')
 const NoSQLController = require('../controllers/NoSQL')
 
+router.get('/getChiTietTuyen/:IDTuyen', NoSQLController.getChiTietTuyen)
 router.get('/tuyenxe', NoSQLController.GetTuyenXe)
 router.post('/tuyenxe', NoSQLController.GetTuyenXe)
 router.get('/login', NoSQLController.GetLoginPage)

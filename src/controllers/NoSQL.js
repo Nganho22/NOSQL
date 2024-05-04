@@ -75,8 +75,8 @@ let GetTuyenXe = async (req, res) => {
     if (diemDi) {
         cypher += " {TenThanhPho: '" + diemDi + "'}"
     }
-    cypher += "), (t)-[:dung]->(lx:LoaiXe) RETURN tpdi.TenThanhPho +' -> ' +tpden.TenThanhPho AS HanhTrinh, lx.TenLoaiXe, t.QuangDuong, t.ThoiGian, t.GiaVe ORDER BY tpdi.TenThanhPho";
-
+    cypher += "), (t)-[:dung]->(lx:LoaiXe) RETURN tpdi.TenThanhPho +' -> ' +tpden.TenThanhPho AS HanhTrinh, lx.TenLoaiXe, t.QuangDuong, t.ThoiGian, t.GiaVe, t.IDTuyen ORDER BY tpdi.TenThanhPho";
+    console.log(cypher)
     try {
         const startTime = new Date().getTime();
         const result = await session.run(cypher);
@@ -86,8 +86,10 @@ let GetTuyenXe = async (req, res) => {
             LoaiXe: record.get('lx.TenLoaiXe'),
             QuangDuong: record.get('t.QuangDuong'),
             ThoiGian: record.get('t.ThoiGian'),
-            GiaVe: record.get('t.GiaVe')
+            GiaVe: record.get('t.GiaVe'),
+            IDTuyen: record.get('t.IDTuyen')
         }));
+        console.log(TuyenXes)
         //console.log("cypher", cypher)
         const endTime = new Date().getTime(); // Thời gian kết thúc truy vấn
         const queryTime = endTime - startTime; // Thời gian thực hiện truy vấn
@@ -121,7 +123,44 @@ let GetLoginPage = async (req, res) => {
 };
 
 
-
+let getChiTietTuyen = async (req, res) => {
+    const IDTuyen = req.params.IDTuyen;
+    var driver = createDriver();
+    var session = driver.session({ database: 'futa' });
+    let cypher_Don = "MATCH (don:Ben)<-[:Don]-(t:Tuyen {IDTuyen :'" + IDTuyen + "'}) RETURN don.TenBen";
+    let cypher_Tra = "MATCH (tra:Ben)<-[:Tra]-(t:Tuyen {IDTuyen :'" + IDTuyen + "'}) RETURN tra.TenBen";
+    let cypher = "MATCH (tpden:ThanhPho) <-[:Den]-(t:Tuyen {IDTuyen: '" + IDTuyen + "'})-[:XuatPhatTu]->(tpdi:ThanhPho), (t)-[:dung]->(lx:LoaiXe) RETURN tpdi.TenThanhPho +' -> ' +tpden.TenThanhPho AS HanhTrinh, lx.TenLoaiXe, t.QuangDuong, t.ThoiGian, t.GiaVe, t.IDTuyen"
+    try {
+        const startTime = new Date().getTime();
+        const result1 = await session.run(cypher_Don);
+        const result2 = await session.run(cypher_Tra);
+        const result3 = await session.run(cypher);
+        const Ben_Di = result1.records.map(record => ({
+            BenDi: record.get('don.TenBen')
+        }));
+        const Ben_Den = result2.records.map(record => ({
+            BenDen: record.get('tra.TenBen')
+        }));
+        const TuyenXes = result3.records.map(record => ({
+            HanhTrinh: record.get('HanhTrinh'),
+            LoaiXe: record.get('lx.TenLoaiXe'),
+            QuangDuong: record.get('t.QuangDuong'),
+            ThoiGian: record.get('t.ThoiGian'),
+            GiaVe: record.get('t.GiaVe'),
+        }));
+        //console.log("cypher", cypher)
+        const endTime = new Date().getTime(); // Thời gian kết thúc truy vấn
+        const queryTime = endTime - startTime; // Thời gian thực hiện truy vấn
+        console.log('Thời gian truy vấn:', queryTime, 'ms');
+        return res.render('pages/CTTuyen.ejs', { BenDi: Ben_Di, BenDen: Ben_Den, TuyenXes: TuyenXes, selectedOption: 'nosql', IDTuyen: IDTuyen }); // Change 'nosql' to 'sql' if SQL is selected
+    } catch (error) {
+        console.error('Error retrieving data:', error);
+        return res.status(500).send('Internal Server Error');
+    } finally {
+        await session.close();
+        await driver.close();
+    }
+};
 
 
 let GetDatVePage = async (req, res) => {
@@ -154,5 +193,6 @@ module.exports = {
     gethomepage,
     GetLoginPage,
     GetDatVePage,
-    GetTuyenXe
+    GetTuyenXe,
+    getChiTietTuyen
 }
