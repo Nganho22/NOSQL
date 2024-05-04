@@ -2,6 +2,8 @@ const { createDriver } = require('../config/neo4jDB');
 const connectToMongoDB = require('../config/connectMongoDB');
 const mongoose = require('mongoose');
 const { connectToRedis } = require('../config/redisDB');
+const redis = require('redis');
+const redisClient = redis.createClient();
 
 let gethomepage = async (req, res) => {
 
@@ -106,22 +108,55 @@ let GetTuyenXe = async (req, res) => {
 
 
 let GetLoginPage = async (req, res) => {
-    try {
-        // Tạo một client Redis
-        const redisClient = connectToRedis()
-        await redisClient.connect()
-        let userSession = await redisClient.hGetAll('cart:1234_01');
-        console.log(JSON.stringify(userSession, null, 2));
-        redisClient.quit()
-        // Render trang loginPage
-        return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
-    } catch (error) {
-        // Xử lý lỗi nếu có
-        console.error('Error:', error);
-        return res.status(500).send('Internal Server Error');
-    }
+  try {
+      const redisClient = connectToRedis()
+      await redisClient.connect()
+      let userSession = await redisClient.hGetAll('2810050906.0');
+      // console.log(JSON.stringify(userSession, null, 2));
+      
+      // console.log(req.body)
+
+      return res.render('pages/loginPage.ejs', { selectedOption: 'nosql' });
+  } catch (error) {
+      console.error('Error:', error);
+      return res.status(500).send('Internal Server Error');
+  }
 };
 
+let login_check = async (req, res) => {
+  try {
+      const sdt = req.body.sdt;
+      const mk = req.body.matKhau;
+
+      redisClient.connect();
+
+      let userSession = await redisClient.hGetAll(sdt);
+
+      if (!userSession || Object.keys(userSession).length === 0) {
+          console.log('User not found in Redis');
+          return res.status(404).send('User not found');
+      }
+
+      if (userSession.MatKhau === mk) {
+          console.log('Login successful');
+          return res.redirect('/nosql/userprofile');
+      } else {
+          console.log('Incorrect password');
+          return res.status(401).send('Incorrect password');
+      }
+  } catch (error) {
+      console.error('Error:', error);
+      return res.status(500).send('Internal Server Error');
+  }
+};
+
+let GetSignUpPage = async (req, res) => {
+  return res.render('pages/signup.ejs', { selectedOption: 'nosql' });
+};
+
+let GetUserProfile = async (req, res) => {
+  return res.render('pages/userprofile.ejs', { selectedOption: 'nosql' });
+};
 
 let getChiTietTuyen = async (req, res) => {
     const IDTuyen = req.params.IDTuyen;
@@ -314,6 +349,9 @@ let GetDatVePage = async (req, res) => {
 module.exports = {
     gethomepage,
     GetLoginPage,
+    login_check,
+    GetUserProfile,
+    GetSignUpPage,
     GetDatVePage,
     GetTuyenXe,
     getChiTietTuyen,

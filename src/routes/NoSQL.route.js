@@ -6,7 +6,13 @@ const NoSQLController = require('../controllers/NoSQL')
 router.get('/getChiTietTuyen/:IDTuyen', NoSQLController.getChiTietTuyen)
 router.get('/tuyenxe', NoSQLController.GetTuyenXe)
 router.post('/tuyenxe', NoSQLController.GetTuyenXe)
+
 router.get('/login', NoSQLController.GetLoginPage)
+router.post('/login', NoSQLController.login_check)
+
+router.get('/signup', NoSQLController.GetSignUpPage)
+router.get('/userprofile', NoSQLController.GetUserProfile)
+
 router.get('/DatVe', NoSQLController.GetDatVePage)
 router.post('/DatVe', NoSQLController.GetDatVePage)
 router.get('/HoaDon', NoSQLController.GetHoaDonPage)
