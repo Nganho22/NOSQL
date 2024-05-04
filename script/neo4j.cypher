@@ -73,12 +73,19 @@ CASE WHEN row[1] IS null THEN 'null' ELSE row[1] END
         MATCH (t:Tuyen { IDTuyen: row[0] }), (lx:LoaiXe {TenLoaiXe: row[1]})
         CREATE (t)-[:dung]->(lx);
         
-//Quan he tuyen & tp
+//Quan he tuyen & tp_xuatphat
+        LOAD CSV FROM 'file: ///tuyen_tp.csv' AS row FIELDTERMINATOR ';'
+        WITH row
+        WHERE row[0] IS NOT null AND row[1] IS NOT null AND row[2] IS NOT null
+        MATCH (t:Tuyen { IDTuyen: row[0] }), (tpxuatphat:ThanhPho {IDThanhPho: row[1]})
+        CREATE (t)-[:XuatPhatTu]->(tpxuatphat);
+        
+//Quan he tuyen & tp_den
         LOAD CSV FROM 'file: ///tuyen_tp.csv' AS row FIELDTERMINATOR ';'
         WITH row
         WHERE row[0] IS NOT null AND (row[1] IS NOT null OR row[2] IS NOT null )
-        MATCH (t:Tuyen { IDTuyen: row[0] }), (tpxuatphat:ThanhPho {TenThanhPho: row[1]}), (tpden:ThanhPho {TenThanhPho: row[2]})
-        CREATE (tpxuatphat)<-[:XuatPhatTu]-(t)-[:Den]->(tpden);
+        MATCH (t:Tuyen { IDTuyen: row[0] }), (tpden:ThanhPho {IDThanhPho: row[2]})
+        CREATE (t)-[:Den]->(tpden);
         
 //Quan he tuyen & ben den
         LOAD CSV FROM 'file: ///tuyen_benden.csv' AS row FIELDTERMINATOR ';'
