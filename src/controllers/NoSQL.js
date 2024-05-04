@@ -346,6 +346,131 @@ let GetDatVePage = async (req, res) => {
     });
   };
 
+  // -------------------------------------------------
+  // Hàm để định dạng lại ngày thành "dd/mm/yyyy"
+const formatDate = (date) => {
+  const formattedDate = new Date(date).toLocaleDateString('en-GB');
+  return formattedDate;
+};
+
+// Hàm để định dạng lại thời gian thành "hh:mm"
+const formatTime = (timeString) => {
+  // Tách giờ và phút từ chuỗi thời gian
+  const [hours, minutes] = timeString.split(':');
+
+  // Định dạng lại thời gian thành "hh:mm"
+  const formattedTime = `${hours.padStart(2, '0')}:${minutes.padStart(2, '0')}`;
+
+  return formattedTime;
+};
+
+// Hàm định dạng tiền
+const formatPrice = (price) => {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "đ";
+}
+
+const { isValid, parseISO, startOfDay } = require('date-fns');
+
+
+function searchChuyenXe() {
+  const diemDi = document.getElementById('DiemXuatPhat-input').value;
+  const diemDen = document.getElementById('DiemDen-input').value;
+  const ngayXuatPhat = document.getElementById('departure-date').value;
+  const soVe = document.getElementById('quantity').value;
+
+  const filterBuoi = Array.from(document.querySelectorAll('input[name="filterBuoi"]:checked')).map(checkbox => checkbox.value);
+  const filterLoaiXe = Array.from(document.querySelectorAll('input[name="filterLoaiXe"]:checked')).map(checkbox => checkbox.value);
+
+  // Tạo URL với các tham số
+  const url = `/nosql/timchuyenxe?diemDi=${diemDi}&diemDen=${diemDen}&ngayXuatPhat=${ngayXuatPhat}&soVe=${soVe}&filterBuoi=${filterBuoi.join(',')}&filterLoaiXe=${filterLoaiXe.join(',')}`;
+
+  // Chuyển hướng đến trang /nosql/timchuyenxe với các tham số
+  window.location.href = url;
+}
+
+
+let GetTimChuyenXe = async (req, res) => {
+  try {
+      // Nhận dữ liệu từ yêu cầu (request)
+      const { diemDi, diemDen, ngayXuatPhat, soVe } = req.body;
+
+
+      let parsedDate;
+      // Kiểm tra ngày xuất phát có hợp lệ không
+      if (ngayXuatPhat) {
+          parsedDate = parseISO(ngayXuatPhat);
+          if (!isValid(parsedDate)) {
+              throw new Error('Ngày xuất phát không hợp lệ');
+          }
+      } else {
+          // Nếu không có ngày xuất phát, sử dụng ngày hiện tại
+          parsedDate = new Date();
+      }
+
+      // Chỉ lấy ngày từ ngày hiện tại
+      const today = startOfDay(new Date(parsedDate));
+
+      // Kiểm tra điều kiện soVe <= soGhe
+      if (soVe <= 0) {
+          throw new Error('Số vé không hợp lệ');
+      }
+
+      // Kết nối đến MongoDB
+      await connectToMongoDB();
+
+      // Truy vấn cơ sở dữ liệu MongoDB để lấy danh sách chuyến xe thỏa mãn điều kiện
+      const collection = mongoose.connection.collection('TimChuyenXe');
+      const query = {};
+      if (diemDi) {
+          query.DiemXuatPhat = diemDi;
+      }
+      if (diemDen) {
+          query.DiemDen = diemDen;
+      }
+      // Thêm điều kiện để chỉ lấy chuyến xe từ ngày hiện tại trở đi
+      query.NgayXuatPhat = { $gte: today };
+      // Thêm điều kiện để lấy chuyến xe với số vé nhỏ hơn hoặc bằng số ghế
+      query.SoVe = { $lte: soVe };
+
+      // Truy vấn cơ sở dữ liệu
+      const allChuyenXe = await collection.find(query).toArray();
+
+      // Xử lý kết quả trước khi gửi về client
+      const chuyenXeList = allChuyenXe.map((record) => {
+          // Định dạng lại các thuộc tính ngày
+          const formattedNgayXuatPhat = formatDate(record.NgayXuatPhat);
+          const formattedNgayDen = formatDate(record.NgayDen);
+          const formattedThoiGianKhoiHanh = formatTime(record.ThoiGianKhoiHanh);
+          const formattedThoiGianDen = formatTime(record.ThoiGianDen);
+          const formattedGiaVe = formatPrice(record.GiaVe)
+          return {
+              DiemXuatPhat: record.DiemXuatPhat,
+              NgayXuatPhat: formattedNgayXuatPhat,
+              ThoiGianKhoiHanh: formattedThoiGianKhoiHanh,
+              DiemDen: record.DiemDen,
+              NgayDen: formattedNgayDen,
+              ThoiGianDen: formattedThoiGianDen,
+              LoaiXe: record.TenLoaiXe,
+              GiaVe: formattedGiaVe,
+              ThoiGian: record.ThoiGian,
+              SoGhe: record.SoGhe
+          };
+      });
+
+      // Trả về trang web với danh sách chuyến xe đã tìm thấy
+      return res.render("pages/timchuyenxe.ejs", {
+          ChuyenXeList: chuyenXeList,
+          selectedOption: "nosql",
+      });
+  } catch (error) {
+      console.error("Error retrieving data:", error);
+      return res.status(500).send("Internal Server Error");
+  } finally {
+      // Đóng kết nối MongoDB sau khi hoàn tất
+      mongoose.connection.close();
+  }
+};
+
 module.exports = {
     gethomepage,
     GetLoginPage,
@@ -356,5 +481,7 @@ module.exports = {
     GetTuyenXe,
     getChiTietTuyen,
     GetHoaDonPage,
-    GetThanhToanThanhCong
+    GetThanhToanThanhCong,
+    searchChuyenXe,
+    GetTimChuyenXe
 }

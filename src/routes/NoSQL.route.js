@@ -17,5 +17,9 @@ router.get('/DatVe', NoSQLController.GetDatVePage)
 router.post('/DatVe', NoSQLController.GetDatVePage)
 router.get('/HoaDon', NoSQLController.GetHoaDonPage)
 router.post('/HoaDon', NoSQLController.GetHoaDonPage)
+
+router.get('/timchuyenxe', NoSQLController.GetTimChuyenXe)
+router.post('/timchuyenxe', NoSQLController.GetTimChuyenXe)
+
 router.get('/', NoSQLController.gethomepage)
 module.exports = router

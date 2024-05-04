@@ -13,6 +13,27 @@ header {
     /* Khoảng cách giữa hai dòng */
 }
 
+.row1-user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-user img {
+    height: 50px;
+    border-width: 50%;
+}
+
+.vn-btn {
+    position: absolute;
+    left: 5px;
+    top: 50%; /* Để căn logo-user ở giữa chiều dọc */
+    transform: translateY(-50%);
+} 
+
+
 .row2 {
     display: flex;
     align-items: center;
@@ -167,7 +188,6 @@ body {
     justify-content: space-around;
     /* Căn giữa các phần tử và chia đều khoảng cách */
 }
-
 
 .search-input {
     display: flex;

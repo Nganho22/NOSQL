@@ -1,0 +1,155 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF7F5;
+}
+
+.input-date {
+    width: 150px; /* Điều chỉnh kích thước chiều rộng của trường input */
+    height: 45px; /* Điều chỉnh kích thước chiều cao của trường input */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container-chuyen-xe {
+    width: 1200px;
+    margin: 20px auto 0; /* Thay đổi margin top để căn giữa theo chiều dọc */
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Căn nội dung vào giữa */
+}
+
+.search-bar-chuyen-xe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* .search-input {
+    flex: 1;
+    margin-right: 10px; /* Thêm margin nếu bạn muốn chúng cách nhau */
+}  */
+
+.search-bar-chuyen-xe input[type="text"] {
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFF7F5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-chuyen-xe-btn button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #fde5de;
+    color: #ef6164;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.search-bar-chuyen-xe-btn button:hover {
+    background-color: #f1673c;
+    color: white;
+}
+
+/* Thông tin chuyến xe tìm được */
+.chuyen-xe-container {
+    width: calc(7/10 * (100% - 70px)); /* Sử dụng calc để tính toán chiều rộng, trừ đi tổng chiều rộng của top-sidebar và margin */
+}
+
+.filter-sidebar {
+    width: calc(3/10 * (100% - 70px)); /* Sử dụng calc để tính toán chiều rộng, trừ đi tổng chiều rộng của top-sidebar và margin */
+    padding: 20px;
+    margin-left: 65px;
+}
+
+.flex-container {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: flex-end; /* Căn phần tử con sang phải */
+    margin-left: 155px;
+    margin-top: 20px;
+}
+
+
+
+/* Định dạng các tiêu đề của bộ lọc */
+.filter h5 {
+    margin-bottom: 10px; /* Tạo khoảng cách dưới của tiêu đề */
+}
+
+/* Định dạng các mục trong bộ lọc */
+.filter label {
+    display: block; /* Hiển thị mỗi label trên một dòng */
+    margin-bottom: 0px; /* Tạo khoảng cách dưới của mỗi mục */
+    margin-bottom: 0px;
+}
+
+
+.chuyen-xe-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.row-1-chuyenxe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DiemXuatPhat-item,
+.ThoiGian-item,
+.DiemDen-item {
+    flex: 1;
+    text-align: center;
+}
+
+.DiemXuatPhat-item .DiaDiem-font {
+    font-weight: bold;
+}
+.DiemDen-item .DiaDiem-font {
+    font-weight: bold;
+}
+
+.ThongTinXe-item {
+    text-align: center;
+    font-weight: bold;
+    flex-grow: 1; /* Cho phép các phần tử này mở rộng để lấp đầy không gian trống */
+}
+
+.xe-info {
+    display: flex;
+    align-items: center; /* Căn chỉnh theo trục dọc */
+}
+
+.separator {
+    margin: 0 5px; /* Khoảng cách giữa dấu chấm tròn và các phần tử khác */
+}
+/* Căn chỉnh các phần tử con vào chính giữa theo trục ngang */
+.LoaiXe, .SoGhe {
+    margin: 0; /* Reset margin mặc định */
+    flex: 1; /* Đặt phần tử con co giãn để lấp đầy không gian trống */
+    text-align: center; /* Căn chỉnh văn bản vào chính giữa */
+    color: gray;
+}
+.ThongTinXe-item p.GiaVe {
+    color: red;
+}
+.row-2-chuyenxe {
+    text-align: right; /* Di chuyển nút sang bên phải */
+}

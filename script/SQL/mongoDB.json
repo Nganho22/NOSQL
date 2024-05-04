@@ -1,0 +1,4066 @@
+[{
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ac"
+    },
+    "": 0,
+    "IDTuyen": "T001",
+    "IDThanhPhoXuatPhat": "TP001",
+    "DiemXuatPhat": "An Nhơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 639,
+    "ThoiGianAsText": "11 giờ 30 phút",
+    "SoGio": 11,
+    "SoPhut": 30,
+    "ThoiGian": 11.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ad"
+    },
+    "": 1,
+    "IDTuyen": "T002",
+    "IDThanhPhoXuatPhat": "TP001",
+    "DiemXuatPhat": "An Nhơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 660,
+    "ThoiGianAsText": "13 giờ 46 phút",
+    "SoGio": 13,
+    "SoPhut": 46,
+    "ThoiGian": 13.77
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ae"
+    },
+    "": 2,
+    "IDTuyen": "T003",
+    "IDThanhPhoXuatPhat": "TP001",
+    "DiemXuatPhat": "An Nhơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 600000,
+    "QuangDuong": 627,
+    "ThoiGianAsText": "10 giờ 7 phút",
+    "SoGio": 10,
+    "SoPhut": 7,
+    "ThoiGian": 10.12
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534af"
+    },
+    "": 3,
+    "IDTuyen": "T004",
+    "IDThanhPhoXuatPhat": "TP002",
+    "DiemXuatPhat": "Bạc Liêu",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 271,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b0"
+    },
+    "": 4,
+    "IDTuyen": "T005",
+    "IDThanhPhoXuatPhat": "TP003",
+    "DiemXuatPhat": "Bảo Lộc",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 756,
+    "ThoiGianAsText": "16 giờ 38 phút",
+    "SoGio": 16,
+    "SoPhut": 38,
+    "ThoiGian": 16.63
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b1"
+    },
+    "": 5,
+    "IDTuyen": "T006",
+    "IDThanhPhoXuatPhat": "TP003",
+    "DiemXuatPhat": "Bảo Lộc",
+    "IDThanhPhoDen": "TP024",
+    "DiemDen": "Huế",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 827,
+    "ThoiGianAsText": "19 giờ",
+    "SoGio": 19,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b2"
+    },
+    "": 6,
+    "IDTuyen": "T007",
+    "IDThanhPhoXuatPhat": "TP003",
+    "DiemXuatPhat": "Bảo Lộc",
+    "IDThanhPhoDen": "TP036",
+    "DiemDen": "Quảng Ngãi",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 600000,
+    "QuangDuong": 685,
+    "ThoiGianAsText": "12 giờ 16 phút",
+    "SoGio": 12,
+    "SoPhut": 16,
+    "ThoiGian": 12.27
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b3"
+    },
+    "": 7,
+    "IDTuyen": "T008",
+    "IDThanhPhoXuatPhat": "TP004",
+    "DiemXuatPhat": "Bến Tre",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 75,
+    "ThoiGianAsText": "2 giờ",
+    "SoGio": 2,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b4"
+    },
+    "": 8,
+    "IDTuyen": "T009",
+    "IDThanhPhoXuatPhat": "TP040",
+    "DiemXuatPhat": "Sóc Trăng",
+    "IDThanhPhoDen": "TP005",
+    "DiemDen": "Bình Dương",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 260,
+    "ThoiGianAsText": "5 giờ 26 phút",
+    "SoGio": 5,
+    "SoPhut": 26,
+    "ThoiGian": 5.43
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b5"
+    },
+    "": 9,
+    "IDTuyen": "T010",
+    "IDThanhPhoXuatPhat": "TP005",
+    "DiemXuatPhat": "Bình Dương",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 317,
+    "ThoiGianAsText": "6 giờ 21 phút",
+    "SoGio": 6,
+    "SoPhut": 21,
+    "ThoiGian": 6.35
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b6"
+    },
+    "": 10,
+    "IDTuyen": "T011",
+    "IDThanhPhoXuatPhat": "TP005",
+    "DiemXuatPhat": "Bình Dương",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 380,
+    "ThoiGianAsText": "7 giờ 37 phút",
+    "SoGio": 7,
+    "SoPhut": 37,
+    "ThoiGian": 7.62
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b7"
+    },
+    "": 11,
+    "IDTuyen": "T012",
+    "IDThanhPhoXuatPhat": "TP005",
+    "DiemXuatPhat": "Bình Dương",
+    "IDThanhPhoDen": "TP021",
+    "DiemDen": "Hà Tiên",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 352,
+    "ThoiGianAsText": "8 giờ 30 phút",
+    "SoGio": 8,
+    "SoPhut": 30,
+    "ThoiGian": 8.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b8"
+    },
+    "": 12,
+    "IDTuyen": "T013",
+    "IDThanhPhoXuatPhat": "TP005",
+    "DiemXuatPhat": "Bình Dương",
+    "IDThanhPhoDen": "TP038",
+    "DiemDen": "Rạch Giá",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 272,
+    "ThoiGianAsText": "6 giờ 35 phút",
+    "SoGio": 6,
+    "SoPhut": 35,
+    "ThoiGian": 6.58
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534b9"
+    },
+    "": 13,
+    "IDTuyen": "T014",
+    "IDThanhPhoXuatPhat": "TP005",
+    "DiemXuatPhat": "Bình Dương",
+    "IDThanhPhoDen": "TP040",
+    "DiemDen": "Sóc Trăng",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 255,
+    "ThoiGianAsText": "5 giờ 26 phút",
+    "SoGio": 5,
+    "SoPhut": 26,
+    "ThoiGian": 5.43
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ba"
+    },
+    "": 14,
+    "IDTuyen": "T015",
+    "IDThanhPhoXuatPhat": "TP005",
+    "DiemXuatPhat": "Bình Dương",
+    "IDThanhPhoDen": "TP053",
+    "DiemDen": "Vĩnh Thuận (Kiên Giang)",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 311,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534bb"
+    },
+    "": 15,
+    "IDTuyen": "T016",
+    "IDThanhPhoXuatPhat": "TP006",
+    "DiemXuatPhat": "Buôn Ma Thuột",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 330,
+    "ThoiGianAsText": "9 giờ 30 phút",
+    "SoGio": 9,
+    "SoPhut": 30,
+    "ThoiGian": 9.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534bc"
+    },
+    "": 16,
+    "IDTuyen": "T017",
+    "IDThanhPhoXuatPhat": "TP006",
+    "DiemXuatPhat": "Buôn Ma Thuột",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 354,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534bd"
+    },
+    "": 17,
+    "IDTuyen": "T018",
+    "IDThanhPhoXuatPhat": "TP006",
+    "DiemXuatPhat": "Buôn Ma Thuột",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 435,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534be"
+    },
+    "": 18,
+    "IDTuyen": "T019",
+    "IDThanhPhoXuatPhat": "TP007",
+    "DiemXuatPhat": "BX An Sương",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 966,
+    "ThoiGianAsText": "17 giờ 52 phút",
+    "SoGio": 17,
+    "SoPhut": 52,
+    "ThoiGian": 17.87
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534bf"
+    },
+    "": 19,
+    "IDTuyen": "T020",
+    "IDThanhPhoXuatPhat": "TP007",
+    "DiemXuatPhat": "BX An Sương",
+    "IDThanhPhoDen": "TP036",
+    "DiemDen": "Quảng Ngãi",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 820,
+    "ThoiGianAsText": "16 giờ 37 phút",
+    "SoGio": 16,
+    "SoPhut": 37,
+    "ThoiGian": 16.62
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c0"
+    },
+    "": 20,
+    "IDTuyen": "T021",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP005",
+    "DiemDen": "Bình Dương",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 380,
+    "ThoiGianAsText": "7 giờ 37 phút",
+    "SoGio": 7,
+    "SoPhut": 37,
+    "ThoiGian": 7.62
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c1"
+    },
+    "": 21,
+    "IDTuyen": "T022",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP005",
+    "DiemDen": "Bình Dương",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 317,
+    "ThoiGianAsText": "6 giờ 21 phút",
+    "SoGio": 6,
+    "SoPhut": 21,
+    "ThoiGian": 6.35
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c2"
+    },
+    "": 22,
+    "IDTuyen": "T023",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 143,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c3"
+    },
+    "": 23,
+    "IDTuyen": "T024",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 135,
+    "ThoiGianAsText": "3 giờ 33 phút",
+    "SoGio": 3,
+    "SoPhut": 33,
+    "ThoiGian": 3.55
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c4"
+    },
+    "": 24,
+    "IDTuyen": "T025",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP012",
+    "DiemDen": "Châu Đốc",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 236,
+    "ThoiGianAsText": "6 giờ 30 phút",
+    "SoGio": 6,
+    "SoPhut": 30,
+    "ThoiGian": 6.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c5"
+    },
+    "": 25,
+    "IDTuyen": "T026",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 282,
+    "ThoiGianAsText": "6 giờ 30 phút",
+    "SoGio": 6,
+    "SoPhut": 30,
+    "ThoiGian": 6.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c6"
+    },
+    "": 26,
+    "IDTuyen": "T027",
+    "IDThanhPhoXuatPhat": "TP008",
+    "DiemXuatPhat": "Cà Mau",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 302,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c7"
+    },
+    "": 27,
+    "IDTuyen": "T028",
+    "IDThanhPhoXuatPhat": "TP009",
+    "DiemXuatPhat": "Cam Ranh",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "ThoiGianAsText": "10 giờ 4 phút",
+    "SoGio": 10,
+    "SoPhut": 4,
+    "ThoiGian": 10.07
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c8"
+    },
+    "": 28,
+    "IDTuyen": "T029",
+    "IDThanhPhoXuatPhat": "TP009",
+    "DiemXuatPhat": "Cam Ranh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 350,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534c9"
+    },
+    "": 29,
+    "IDTuyen": "T030",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 144,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ca"
+    },
+    "": 30,
+    "IDTuyen": "T031",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 135,
+    "ThoiGianAsText": "3 giờ 33 phút",
+    "SoGio": 3,
+    "SoPhut": 33,
+    "ThoiGian": 3.55
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534cb"
+    },
+    "": 31,
+    "IDTuyen": "T032",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP012",
+    "DiemDen": "Châu Đốc",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 115,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534cc"
+    },
+    "": 32,
+    "IDTuyen": "T033",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 459,
+    "ThoiGianAsText": "11 giờ",
+    "SoGio": 11,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534cd"
+    },
+    "": 33,
+    "IDTuyen": "T034",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP023",
+    "DiemDen": "Hồng Ngự",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 166,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ce"
+    },
+    "": 34,
+    "IDTuyen": "T035",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP027",
+    "DiemDen": "Năm Căn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 190,
+    "ThoiGianAsText": "4 giờ 4 phút",
+    "SoGio": 4,
+    "SoPhut": 4,
+    "ThoiGian": 4.07
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534cf"
+    },
+    "": 35,
+    "IDTuyen": "T036",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP038",
+    "DiemDen": "Rạch Giá",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 112,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d0"
+    },
+    "": 36,
+    "IDTuyen": "T037",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 166,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d1"
+    },
+    "": 37,
+    "IDTuyen": "T038",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 167,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d2"
+    },
+    "": 38,
+    "IDTuyen": "T039",
+    "IDThanhPhoXuatPhat": "TP010",
+    "DiemXuatPhat": "Cần Thơ",
+    "IDThanhPhoDen": "TP054",
+    "DiemDen": "Vũng Tàu",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 451,
+    "ThoiGianAsText": "9 giờ 9 phút",
+    "SoGio": 9,
+    "SoPhut": 9,
+    "ThoiGian": 9.15
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d3"
+    },
+    "": 39,
+    "IDTuyen": "T040",
+    "IDThanhPhoXuatPhat": "TP011",
+    "DiemXuatPhat": "Cao Lãnh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 144,
+    "ThoiGianAsText": "3 giờ",
+    "SoGio": 3,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d4"
+    },
+    "": 40,
+    "IDTuyen": "T041",
+    "IDThanhPhoXuatPhat": "TP012",
+    "DiemXuatPhat": "Châu Đốc",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 236,
+    "ThoiGianAsText": "6 giờ 30 phút",
+    "SoGio": 6,
+    "SoPhut": 30,
+    "ThoiGian": 6.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d5"
+    },
+    "": 41,
+    "IDTuyen": "T042",
+    "IDThanhPhoXuatPhat": "TP012",
+    "DiemXuatPhat": "Châu Đốc",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 115,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d6"
+    },
+    "": 42,
+    "IDTuyen": "T043",
+    "IDThanhPhoXuatPhat": "TP012",
+    "DiemXuatPhat": "Châu Đốc",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 240,
+    "ThoiGianAsText": "6 giờ 15 phút",
+    "SoGio": 6,
+    "SoPhut": 15,
+    "ThoiGian": 6.25
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d7"
+    },
+    "": 43,
+    "IDTuyen": "T044",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 457,
+    "ThoiGianAsText": "11 giờ",
+    "SoGio": 11,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d8"
+    },
+    "": 44,
+    "IDTuyen": "T045",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 757,
+    "ThoiGianAsText": "17 giờ",
+    "SoGio": 17,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534d9"
+    },
+    "": 45,
+    "IDTuyen": "T046",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP024",
+    "DiemDen": "Huế",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 843,
+    "ThoiGianAsText": "17 giờ",
+    "SoGio": 17,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534da"
+    },
+    "": 46,
+    "IDTuyen": "T047",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP030",
+    "DiemDen": "Nha Trang",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 137,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534db"
+    },
+    "": 47,
+    "IDTuyen": "T048",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP035",
+    "DiemDen": "Phan Thiết",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 163,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534dc"
+    },
+    "": 48,
+    "IDTuyen": "T049",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP036",
+    "DiemDen": "Quảng Ngãi",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 511,
+    "ThoiGianAsText": "10 giờ 49 phút",
+    "SoGio": 10,
+    "SoPhut": 49,
+    "ThoiGian": 10.82
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534dd"
+    },
+    "": 49,
+    "IDTuyen": "T050",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 310,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534de"
+    },
+    "": 50,
+    "IDTuyen": "T051",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 305,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534df"
+    },
+    "": 51,
+    "IDTuyen": "T052",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 293,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e0"
+    },
+    "": 52,
+    "IDTuyen": "T053",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 294,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e1"
+    },
+    "": 53,
+    "IDTuyen": "T054",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 320,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e2"
+    },
+    "": 54,
+    "IDTuyen": "T055",
+    "IDThanhPhoXuatPhat": "TP013",
+    "DiemXuatPhat": "Đà Lạt",
+    "IDThanhPhoDen": "TP054",
+    "DiemDen": "Vũng Tàu",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 318,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e3"
+    },
+    "": 55,
+    "IDTuyen": "T056",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP003",
+    "DiemDen": "Bảo Lộc",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 756,
+    "ThoiGianAsText": "16 giờ 38 phút",
+    "SoGio": 16,
+    "SoPhut": 38,
+    "ThoiGian": 16.63
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e4"
+    },
+    "": 56,
+    "IDTuyen": "T057",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP007",
+    "DiemDen": "BX An Sương",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 966,
+    "ThoiGianAsText": "20 giờ",
+    "SoGio": 20,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e5"
+    },
+    "": 57,
+    "IDTuyen": "T058",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP009",
+    "DiemDen": "Cam Ranh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 568,
+    "ThoiGianAsText": "10 giờ 4 phút",
+    "SoGio": 10,
+    "SoPhut": 4,
+    "ThoiGian": 10.07
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e6"
+    },
+    "": 58,
+    "IDTuyen": "T059",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 666,
+    "ThoiGianAsText": "17 giờ",
+    "SoGio": 17,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e7"
+    },
+    "": 59,
+    "IDTuyen": "T060",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP017",
+    "DiemDen": "Đắk Nông",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 636,
+    "ThoiGianAsText": "12 giờ 12 phút",
+    "SoGio": 12,
+    "SoPhut": 12,
+    "ThoiGian": 12.2
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e8"
+    },
+    "": 60,
+    "IDTuyen": "T061",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP020",
+    "DiemDen": "Hà Nội",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 736,
+    "ThoiGianAsText": "14 giờ 38 phút",
+    "SoGio": 14,
+    "SoPhut": 38,
+    "ThoiGian": 14.63
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534e9"
+    },
+    "": 61,
+    "IDTuyen": "T062",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP020",
+    "DiemDen": "Hà Nội",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 766,
+    "ThoiGianAsText": "18 giờ",
+    "SoGio": 18,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ea"
+    },
+    "": 62,
+    "IDTuyen": "T063",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP030",
+    "DiemDen": "Nha Trang",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 528,
+    "ThoiGianAsText": "9 giờ 25 phút",
+    "SoGio": 9,
+    "SoPhut": 25,
+    "ThoiGian": 9.42
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534eb"
+    },
+    "": 63,
+    "IDTuyen": "T064",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP030",
+    "DiemDen": "Nha Trang",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 543,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ec"
+    },
+    "": 64,
+    "IDTuyen": "T065",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 957,
+    "ThoiGianAsText": "20 giờ",
+    "SoGio": 20,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ed"
+    },
+    "": 65,
+    "IDTuyen": "T066",
+    "IDThanhPhoXuatPhat": "TP014",
+    "DiemXuatPhat": "Đà Nẵng",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 850,
+    "ThoiGianAsText": "20 giờ",
+    "SoGio": 20,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ee"
+    },
+    "": 66,
+    "IDTuyen": "T067",
+    "IDThanhPhoXuatPhat": "TP015",
+    "DiemXuatPhat": "Đại Lộc",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 942,
+    "ThoiGianAsText": "17 giờ 29 phút",
+    "SoGio": 17,
+    "SoPhut": 29,
+    "ThoiGian": 17.48
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ef"
+    },
+    "": 67,
+    "IDTuyen": "T068",
+    "IDThanhPhoXuatPhat": "TP016",
+    "DiemXuatPhat": "Đại Ngãi",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 230,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f0"
+    },
+    "": 68,
+    "IDTuyen": "T069",
+    "IDThanhPhoXuatPhat": "TP017",
+    "DiemXuatPhat": "Đắk Nông",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 636,
+    "ThoiGianAsText": "12 giờ 12 phút",
+    "SoGio": 12,
+    "SoPhut": 12,
+    "ThoiGian": 12.2
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f1"
+    },
+    "": 69,
+    "IDTuyen": "T070",
+    "IDThanhPhoXuatPhat": "TP018",
+    "DiemXuatPhat": "Đơn Dương",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 290,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f2"
+    },
+    "": 70,
+    "IDTuyen": "T071",
+    "IDThanhPhoXuatPhat": "TP019",
+    "DiemXuatPhat": "Gia Lai",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 515,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f3"
+    },
+    "": 71,
+    "IDTuyen": "T072",
+    "IDThanhPhoXuatPhat": "TP020",
+    "DiemXuatPhat": "Hà Nội",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 763,
+    "ThoiGianAsText": "14 giờ 38 phút",
+    "SoGio": 14,
+    "SoPhut": 38,
+    "ThoiGian": 14.63
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f4"
+    },
+    "": 72,
+    "IDTuyen": "T073",
+    "IDThanhPhoXuatPhat": "TP020",
+    "DiemXuatPhat": "Hà Nội",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 764,
+    "ThoiGianAsText": "18 giờ",
+    "SoGio": 18,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f5"
+    },
+    "": 73,
+    "IDTuyen": "T074",
+    "IDThanhPhoXuatPhat": "TP020",
+    "DiemXuatPhat": "Hà Nội",
+    "IDThanhPhoDen": "TP024",
+    "DiemDen": "Huế",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 654,
+    "ThoiGianAsText": "12 giờ 50 phút",
+    "SoGio": 12,
+    "SoPhut": 50,
+    "ThoiGian": 12.83
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f6"
+    },
+    "": 74,
+    "IDTuyen": "T075",
+    "IDThanhPhoXuatPhat": "TP020",
+    "DiemXuatPhat": "Hà Nội",
+    "IDThanhPhoDen": "TP028",
+    "DiemDen": "Nam Định",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 79,
+    "ThoiGianAsText": "2 giờ 30 phút",
+    "SoGio": 2,
+    "SoPhut": 30,
+    "ThoiGian": 2.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f7"
+    },
+    "": 75,
+    "IDTuyen": "T076",
+    "IDThanhPhoXuatPhat": "TP021",
+    "DiemXuatPhat": "Hà Tiên",
+    "IDThanhPhoDen": "TP005",
+    "DiemDen": "Bình Dương",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 352,
+    "ThoiGianAsText": "8 giờ 30 phút",
+    "SoGio": 8,
+    "SoPhut": 30,
+    "ThoiGian": 8.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f8"
+    },
+    "": 76,
+    "IDTuyen": "T077",
+    "IDThanhPhoXuatPhat": "TP021",
+    "DiemXuatPhat": "Hà Tiên",
+    "IDThanhPhoDen": "TP038",
+    "DiemDen": "Rạch Giá",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 89,
+    "ThoiGianAsText": "3 giờ 30 phút",
+    "SoGio": 3,
+    "SoPhut": 30,
+    "ThoiGian": 3.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534f9"
+    },
+    "": 77,
+    "IDTuyen": "T078",
+    "IDThanhPhoXuatPhat": "TP021",
+    "DiemXuatPhat": "Hà Tiên",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 314,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534fa"
+    },
+    "": 78,
+    "IDTuyen": "T079",
+    "IDThanhPhoXuatPhat": "TP022",
+    "DiemXuatPhat": "Hộ Phòng",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 271,
+    "ThoiGianAsText": "5 giờ 21 phút",
+    "SoGio": 5,
+    "SoPhut": 21,
+    "ThoiGian": 5.35
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534fb"
+    },
+    "": 79,
+    "IDTuyen": "T080",
+    "IDThanhPhoXuatPhat": "TP023",
+    "DiemXuatPhat": "Hồng Ngự",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 166,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534fc"
+    },
+    "": 80,
+    "IDTuyen": "T081",
+    "IDThanhPhoXuatPhat": "TP023",
+    "DiemXuatPhat": "Hồng Ngự",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 178,
+    "ThoiGianAsText": "5 giờ",
+    "SoGio": 5,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534fd"
+    },
+    "": 81,
+    "IDTuyen": "T082",
+    "IDThanhPhoXuatPhat": "TP024",
+    "DiemXuatPhat": "Huế",
+    "IDThanhPhoDen": "TP003",
+    "DiemDen": "Bảo Lộc",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 827,
+    "ThoiGianAsText": "19 giờ",
+    "SoGio": 19,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534fe"
+    },
+    "": 82,
+    "IDTuyen": "T083",
+    "IDThanhPhoXuatPhat": "TP024",
+    "DiemXuatPhat": "Huế",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 745,
+    "ThoiGianAsText": "16 giờ 35 phút",
+    "SoGio": 16,
+    "SoPhut": 35,
+    "ThoiGian": 16.58
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a5534ff"
+    },
+    "": 83,
+    "IDTuyen": "T084",
+    "IDThanhPhoXuatPhat": "TP024",
+    "DiemXuatPhat": "Huế",
+    "IDThanhPhoDen": "TP020",
+    "DiemDen": "Hà Nội",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 654,
+    "ThoiGianAsText": "12 giờ 50 phút",
+    "SoGio": 12,
+    "SoPhut": 50,
+    "ThoiGian": 12.83
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553500"
+    },
+    "": 84,
+    "IDTuyen": "T085",
+    "IDThanhPhoXuatPhat": "TP024",
+    "DiemXuatPhat": "Huế",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 600000,
+    "QuangDuong": 1042,
+    "ThoiGianAsText": "18 giờ 25 phút",
+    "SoGio": 18,
+    "SoPhut": 25,
+    "ThoiGian": 18.42
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553501"
+    },
+    "": 85,
+    "IDTuyen": "T086",
+    "IDThanhPhoXuatPhat": "TP024",
+    "DiemXuatPhat": "Huế",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 1042,
+    "ThoiGianAsText": "18 giờ 25 phút",
+    "SoGio": 18,
+    "SoPhut": 25,
+    "ThoiGian": 18.42
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553502"
+    },
+    "": 86,
+    "IDTuyen": "T087",
+    "IDThanhPhoXuatPhat": "TP025",
+    "DiemXuatPhat": "Long Xuyên",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 186,
+    "ThoiGianAsText": "5 giờ",
+    "SoGio": 5,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553503"
+    },
+    "": 87,
+    "IDTuyen": "T088",
+    "IDThanhPhoXuatPhat": "TP026",
+    "DiemXuatPhat": "Mũi Né",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 205,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553504"
+    },
+    "": 88,
+    "IDTuyen": "T089",
+    "IDThanhPhoXuatPhat": "TP026",
+    "DiemXuatPhat": "Mũi Né",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 210,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553505"
+    },
+    "": 89,
+    "IDTuyen": "T090",
+    "IDThanhPhoXuatPhat": "TP027",
+    "DiemXuatPhat": "Năm Căn",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 190,
+    "ThoiGianAsText": "4 giờ 4 phút",
+    "SoGio": 4,
+    "SoPhut": 4,
+    "ThoiGian": 4.07
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553506"
+    },
+    "": 90,
+    "IDTuyen": "T091",
+    "IDThanhPhoXuatPhat": "TP027",
+    "DiemXuatPhat": "Năm Căn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 357,
+    "ThoiGianAsText": "7 giờ 18 phút",
+    "SoGio": 7,
+    "SoPhut": 18,
+    "ThoiGian": 7.3
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553507"
+    },
+    "": 91,
+    "IDTuyen": "T092",
+    "IDThanhPhoXuatPhat": "TP028",
+    "DiemXuatPhat": "Nam Định",
+    "IDThanhPhoDen": "TP020",
+    "DiemDen": "Hà Nội",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 78,
+    "ThoiGianAsText": "2 giờ 30 phút",
+    "SoGio": 2,
+    "SoPhut": 30,
+    "ThoiGian": 2.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553508"
+    },
+    "": 92,
+    "IDTuyen": "T093",
+    "IDThanhPhoXuatPhat": "TP029",
+    "DiemXuatPhat": "Ngã 5",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 224,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553509"
+    },
+    "": 93,
+    "IDTuyen": "T094",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP006",
+    "DiemDen": "Buôn Ma Thuột",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 186,
+    "ThoiGianAsText": "3 giờ 40 phút",
+    "SoGio": 3,
+    "SoPhut": 40,
+    "ThoiGian": 3.67
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55350a"
+    },
+    "": 94,
+    "IDTuyen": "T095",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 138,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55350b"
+    },
+    "": 95,
+    "IDTuyen": "T096",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 528,
+    "ThoiGianAsText": "9 giờ 25 phút",
+    "SoGio": 9,
+    "SoPhut": 25,
+    "ThoiGian": 9.42
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55350c"
+    },
+    "": 96,
+    "IDTuyen": "T097",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 545,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55350d"
+    },
+    "": 97,
+    "IDTuyen": "T098",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 436,
+    "ThoiGianAsText": "9 giờ 40 phút",
+    "SoGio": 9,
+    "SoPhut": 40,
+    "ThoiGian": 9.67
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55350e"
+    },
+    "": 98,
+    "IDTuyen": "T099",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 427,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55350f"
+    },
+    "": 99,
+    "IDTuyen": "T100",
+    "IDThanhPhoXuatPhat": "TP030",
+    "DiemXuatPhat": "Nha Trang",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 429,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553510"
+    },
+    "": 100,
+    "IDTuyen": "T101",
+    "IDThanhPhoXuatPhat": "TP031",
+    "DiemXuatPhat": "Ninh Hoà",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 469,
+    "ThoiGianAsText": "9 giờ 18 phút",
+    "SoGio": 9,
+    "SoPhut": 18,
+    "ThoiGian": 9.3
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553511"
+    },
+    "": 101,
+    "IDTuyen": "T102",
+    "IDThanhPhoXuatPhat": "TP031",
+    "DiemXuatPhat": "Ninh Hoà",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 465,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553512"
+    },
+    "": 102,
+    "IDTuyen": "T103",
+    "IDThanhPhoXuatPhat": "TP031",
+    "DiemXuatPhat": "Ninh Hòa",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 464,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553513"
+    },
+    "": 103,
+    "IDTuyen": "T104",
+    "IDThanhPhoXuatPhat": "TP032",
+    "DiemXuatPhat": "Ninh Thuận",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 341,
+    "ThoiGianAsText": "7 giờ 54 phút",
+    "SoGio": 7,
+    "SoPhut": 54,
+    "ThoiGian": 7.9
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553514"
+    },
+    "": 104,
+    "IDTuyen": "T105",
+    "IDThanhPhoXuatPhat": "TP033",
+    "DiemXuatPhat": "Núi Sập",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 200,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553515"
+    },
+    "": 105,
+    "IDTuyen": "T106",
+    "IDThanhPhoXuatPhat": "TP034",
+    "DiemXuatPhat": "Phan Rang",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 326,
+    "ThoiGianAsText": "7 giờ",
+    "SoGio": 7,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553516"
+    },
+    "": 106,
+    "IDTuyen": "T107",
+    "IDThanhPhoXuatPhat": "TP035",
+    "DiemXuatPhat": "Phan Thiết",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 163,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553517"
+    },
+    "": 107,
+    "IDTuyen": "T108",
+    "IDThanhPhoXuatPhat": "TP035",
+    "DiemXuatPhat": "Phan Thiết",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 192,
+    "ThoiGianAsText": "4 giờ 15 phút",
+    "SoGio": 4,
+    "SoPhut": 15,
+    "ThoiGian": 4.25
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553518"
+    },
+    "": 108,
+    "IDTuyen": "T109",
+    "IDThanhPhoXuatPhat": "TP035",
+    "DiemXuatPhat": "Phan Thiết",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 205,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553519"
+    },
+    "": 109,
+    "IDTuyen": "T110",
+    "IDThanhPhoXuatPhat": "TP036",
+    "DiemXuatPhat": "Quảng Ngãi",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 753,
+    "ThoiGianAsText": "18 giờ",
+    "SoGio": 18,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55351a"
+    },
+    "": 110,
+    "IDTuyen": "T111",
+    "IDThanhPhoXuatPhat": "TP036",
+    "DiemXuatPhat": "Quãng Ngãi",
+    "IDThanhPhoDen": "TP003",
+    "DiemDen": "Bảo Lộc",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 631,
+    "ThoiGianAsText": "13 giờ 33 phút",
+    "SoGio": 13,
+    "SoPhut": 33,
+    "ThoiGian": 13.55
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55351b"
+    },
+    "": 111,
+    "IDTuyen": "T112",
+    "IDThanhPhoXuatPhat": "TP036",
+    "DiemXuatPhat": "Quãng Ngãi",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 753,
+    "ThoiGianAsText": "18 giờ",
+    "SoGio": 18,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55351c"
+    },
+    "": 112,
+    "IDTuyen": "T113",
+    "IDThanhPhoXuatPhat": "TP036",
+    "DiemXuatPhat": "Quảng Ngãi",
+    "IDThanhPhoDen": "TP007",
+    "DiemDen": "BX An Sương",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 820,
+    "ThoiGianAsText": "16 giờ 37 phút",
+    "SoGio": 16,
+    "SoPhut": 37,
+    "ThoiGian": 16.62
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55351d"
+    },
+    "": 113,
+    "IDTuyen": "T114",
+    "IDThanhPhoXuatPhat": "TP036",
+    "DiemXuatPhat": "Quảng Ngãi",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 511,
+    "ThoiGianAsText": "10 giờ 49 phút",
+    "SoGio": 10,
+    "SoPhut": 49,
+    "ThoiGian": 10.82
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55351e"
+    },
+    "": 114,
+    "IDTuyen": "T115",
+    "IDThanhPhoXuatPhat": "TP036",
+    "DiemXuatPhat": "Quảng Ngãi",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 812,
+    "ThoiGianAsText": "15 giờ 57 phút",
+    "SoGio": 15,
+    "SoPhut": 57,
+    "ThoiGian": 15.95
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55351f"
+    },
+    "": 115,
+    "IDTuyen": "T116",
+    "IDThanhPhoXuatPhat": "TP037",
+    "DiemXuatPhat": "Qui Nhơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 643,
+    "ThoiGianAsText": "12 giờ 36 phút",
+    "SoGio": 12,
+    "SoPhut": 36,
+    "ThoiGian": 12.6
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553520"
+    },
+    "": 116,
+    "IDTuyen": "T117",
+    "IDThanhPhoXuatPhat": "TP037",
+    "DiemXuatPhat": "Qui Nhơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 612,
+    "ThoiGianAsText": "14 giờ",
+    "SoGio": 14,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553521"
+    },
+    "": 117,
+    "IDTuyen": "T118",
+    "IDThanhPhoXuatPhat": "TP038",
+    "DiemXuatPhat": "Rạch giá",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 271,
+    "ThoiGianAsText": "6 giờ 15 phút",
+    "SoGio": 6,
+    "SoPhut": 15,
+    "ThoiGian": 6.25
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553522"
+    },
+    "": 118,
+    "IDTuyen": "T119",
+    "IDThanhPhoXuatPhat": "TP038",
+    "DiemXuatPhat": "Rạch Giá",
+    "IDThanhPhoDen": "TP005",
+    "DiemDen": "Bình Dương",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 272,
+    "ThoiGianAsText": "6 giờ 35 phút",
+    "SoGio": 6,
+    "SoPhut": 35,
+    "ThoiGian": 6.58
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553523"
+    },
+    "": 119,
+    "IDTuyen": "T120",
+    "IDThanhPhoXuatPhat": "TP038",
+    "DiemXuatPhat": "Rạch Giá",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 112,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553524"
+    },
+    "": 120,
+    "IDTuyen": "T121",
+    "IDThanhPhoXuatPhat": "TP038",
+    "DiemXuatPhat": "Rạch Giá",
+    "IDThanhPhoDen": "TP021",
+    "DiemDen": "Hà Tiên",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 89,
+    "ThoiGianAsText": "3 giờ 30 phút",
+    "SoGio": 3,
+    "SoPhut": 30,
+    "ThoiGian": 3.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553525"
+    },
+    "": 121,
+    "IDTuyen": "T122",
+    "IDThanhPhoXuatPhat": "TP039",
+    "DiemXuatPhat": "Sa Đéc",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 142,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553526"
+    },
+    "": 122,
+    "IDTuyen": "T123",
+    "IDThanhPhoXuatPhat": "TP040",
+    "DiemXuatPhat": "Sóc Trăng",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 222,
+    "ThoiGianAsText": "6 giờ 30 phút",
+    "SoGio": 6,
+    "SoPhut": 30,
+    "ThoiGian": 6.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553527"
+    },
+    "": 123,
+    "IDTuyen": "T124",
+    "IDThanhPhoXuatPhat": "TP041",
+    "DiemXuatPhat": "Tây Ninh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 121,
+    "ThoiGianAsText": "3 giờ 50 phút",
+    "SoGio": 3,
+    "SoPhut": 50,
+    "ThoiGian": 3.83
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553528"
+    },
+    "": 124,
+    "IDTuyen": "T125",
+    "IDThanhPhoXuatPhat": "TP041",
+    "DiemXuatPhat": "Tây Ninh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 112,
+    "ThoiGianAsText": "3 giờ 50 phút",
+    "SoGio": 3,
+    "SoPhut": 50,
+    "ThoiGian": 3.83
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553529"
+    },
+    "": 125,
+    "IDTuyen": "T126",
+    "IDThanhPhoXuatPhat": "TP041",
+    "DiemXuatPhat": "Tây Ninh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 103,
+    "ThoiGianAsText": "3 giờ 34 phút",
+    "SoGio": 3,
+    "SoPhut": 34,
+    "ThoiGian": 3.57
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55352a"
+    },
+    "": 126,
+    "IDTuyen": "T127",
+    "IDThanhPhoXuatPhat": "TP041",
+    "DiemXuatPhat": "Tây Ninh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 84,
+    "ThoiGianAsText": "3 giờ 30 phút",
+    "SoGio": 3,
+    "SoPhut": 30,
+    "ThoiGian": 3.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55352b"
+    },
+    "": 127,
+    "IDTuyen": "T128",
+    "IDThanhPhoXuatPhat": "TP041",
+    "DiemXuatPhat": "Tây Ninh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 103,
+    "ThoiGianAsText": "3 giờ 34 phút",
+    "SoGio": 3,
+    "SoPhut": 34,
+    "ThoiGian": 3.57
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55352c"
+    },
+    "": 128,
+    "IDTuyen": "T129",
+    "IDThanhPhoXuatPhat": "TP042",
+    "DiemXuatPhat": "Tây Sơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 720,
+    "ThoiGianAsText": "12 giờ 30 phút",
+    "SoGio": 12,
+    "SoPhut": 30,
+    "ThoiGian": 12.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55352d"
+    },
+    "": 129,
+    "IDTuyen": "T130",
+    "IDThanhPhoXuatPhat": "TP042",
+    "DiemXuatPhat": "Tây Sơn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 750,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55352e"
+    },
+    "": 130,
+    "IDTuyen": "T131",
+    "IDThanhPhoXuatPhat": "TP043",
+    "DiemXuatPhat": "Thốt Nốt",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 208,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55352f"
+    },
+    "": 131,
+    "IDTuyen": "T132",
+    "IDThanhPhoXuatPhat": "TP044",
+    "DiemXuatPhat": "Tịnh Biên",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 252,
+    "ThoiGianAsText": "5 giờ 13 phút",
+    "SoGio": 5,
+    "SoPhut": 13,
+    "ThoiGian": 5.22
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553530"
+    },
+    "": 132,
+    "IDTuyen": "T133",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP001",
+    "DiemDen": "An Nhơn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 639,
+    "ThoiGianAsText": "11 giờ 30 phút",
+    "SoGio": 11,
+    "SoPhut": 30,
+    "ThoiGian": 11.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553531"
+    },
+    "": 133,
+    "IDTuyen": "T134",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP001",
+    "DiemDen": "An Nhơn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 660,
+    "ThoiGianAsText": "13 giờ 46 phút",
+    "SoGio": 13,
+    "SoPhut": 46,
+    "ThoiGian": 13.77
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553532"
+    },
+    "": 134,
+    "IDTuyen": "T135",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 282,
+    "ThoiGianAsText": "6 giờ 30 phút",
+    "SoGio": 6,
+    "SoPhut": 30,
+    "ThoiGian": 6.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553533"
+    },
+    "": 135,
+    "IDTuyen": "T136",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 166,
+    "ThoiGianAsText": "3 giờ 12 phút",
+    "SoGio": 3,
+    "SoPhut": 12,
+    "ThoiGian": 3.2
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553534"
+    },
+    "": 136,
+    "IDTuyen": "T137",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 305,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553535"
+    },
+    "": 137,
+    "IDTuyen": "T138",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 310,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553536"
+    },
+    "": 138,
+    "IDTuyen": "T139",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 957,
+    "ThoiGianAsText": "17 giờ 48 phút",
+    "SoGio": 17,
+    "SoPhut": 48,
+    "ThoiGian": 17.8
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553537"
+    },
+    "": 139,
+    "IDTuyen": "T140",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP015",
+    "DiemDen": "Đại Lộc",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 942,
+    "ThoiGianAsText": "17 giờ 29 phút",
+    "SoGio": 17,
+    "SoPhut": 29,
+    "ThoiGian": 17.48
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553538"
+    },
+    "": 140,
+    "IDTuyen": "T141",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP018",
+    "DiemDen": "Đơn Dương",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 290,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553539"
+    },
+    "": 141,
+    "IDTuyen": "T142",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP024",
+    "DiemDen": "Huế",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 1042,
+    "ThoiGianAsText": "22 giờ",
+    "SoGio": 22,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55353a"
+    },
+    "": 142,
+    "IDTuyen": "T143",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP024",
+    "DiemDen": "Huế",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 1043,
+    "ThoiGianAsText": "22 giờ",
+    "SoGio": 22,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55353b"
+    },
+    "": 143,
+    "IDTuyen": "T144",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP026",
+    "DiemDen": "Mũi Né",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 205,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55353c"
+    },
+    "": 144,
+    "IDTuyen": "T145",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP029",
+    "DiemDen": "Ngã Năm",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 224,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55353d"
+    },
+    "": 145,
+    "IDTuyen": "T146",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP030",
+    "DiemDen": "Nha Trang",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 436,
+    "ThoiGianAsText": "9 giờ 40 phút",
+    "SoGio": 9,
+    "SoPhut": 40,
+    "ThoiGian": 9.67
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55353e"
+    },
+    "": 146,
+    "IDTuyen": "T147",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP031",
+    "DiemDen": "Ninh Hòa",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 469,
+    "ThoiGianAsText": "9 giờ 18 phút",
+    "SoGio": 9,
+    "SoPhut": 18,
+    "ThoiGian": 9.3
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55353f"
+    },
+    "": 147,
+    "IDTuyen": "T148",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP031",
+    "DiemDen": "Ninh Hòa",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 465,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553540"
+    },
+    "": 148,
+    "IDTuyen": "T149",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP032",
+    "DiemDen": "Ninh Thuận",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 341,
+    "ThoiGianAsText": "7 giờ 54 phút",
+    "SoGio": 7,
+    "SoPhut": 54,
+    "ThoiGian": 7.9
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553541"
+    },
+    "": 149,
+    "IDTuyen": "T150",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP034",
+    "DiemDen": "Phan Rang",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 326,
+    "ThoiGianAsText": "7 giờ",
+    "SoGio": 7,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553542"
+    },
+    "": 150,
+    "IDTuyen": "T151",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP035",
+    "DiemDen": "Phan Thiết",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 192,
+    "ThoiGianAsText": "4 giờ 15 phút",
+    "SoGio": 4,
+    "SoPhut": 15,
+    "ThoiGian": 4.25
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553543"
+    },
+    "": 151,
+    "IDTuyen": "T152",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP036",
+    "DiemDen": "Quảng Ngãi",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 812,
+    "ThoiGianAsText": "15 giờ 57 phút",
+    "SoGio": 15,
+    "SoPhut": 57,
+    "ThoiGian": 15.95
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553544"
+    },
+    "": 152,
+    "IDTuyen": "T153",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP037",
+    "DiemDen": "Qui Nhơn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 643,
+    "ThoiGianAsText": "12 giờ 36 phút",
+    "SoGio": 12,
+    "SoPhut": 36,
+    "ThoiGian": 12.6
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553545"
+    },
+    "": 153,
+    "IDTuyen": "T154",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP041",
+    "DiemDen": "Tây Ninh",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 84,
+    "ThoiGianAsText": "3 giờ 30 phút",
+    "SoGio": 3,
+    "SoPhut": 30,
+    "ThoiGian": 3.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553546"
+    },
+    "": 154,
+    "IDTuyen": "T155",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP041",
+    "DiemDen": "Tây Ninh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 122,
+    "ThoiGianAsText": "3 giờ",
+    "SoGio": 3,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553547"
+    },
+    "": 155,
+    "IDTuyen": "T156",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP041",
+    "DiemDen": "Tây Ninh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 121,
+    "ThoiGianAsText": "3 giờ 50 phút",
+    "SoGio": 3,
+    "SoPhut": 50,
+    "ThoiGian": 3.83
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553548"
+    },
+    "": 156,
+    "IDTuyen": "T157",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP041",
+    "DiemDen": "Tây Ninh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 11,
+    "ThoiGianAsText": "3 giờ 50 phút",
+    "SoGio": 3,
+    "SoPhut": 50,
+    "ThoiGian": 3.83
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553549"
+    },
+    "": 157,
+    "IDTuyen": "T158",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP041",
+    "DiemDen": "Tây Ninh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 122,
+    "ThoiGianAsText": "3 giờ",
+    "SoGio": 3,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55354a"
+    },
+    "": 158,
+    "IDTuyen": "T159",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP046",
+    "DiemDen": "Trà Ôn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 161,
+    "ThoiGianAsText": "3 giờ 16 phút",
+    "SoGio": 3,
+    "SoPhut": 16,
+    "ThoiGian": 3.27
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55354b"
+    },
+    "": 159,
+    "IDTuyen": "T160",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP049",
+    "DiemDen": "Tuy Hòa",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 506,
+    "ThoiGianAsText": "12 giờ 41 phút",
+    "SoGio": 12,
+    "SoPhut": 41,
+    "ThoiGian": 12.68
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55354c"
+    },
+    "": 160,
+    "IDTuyen": "T161",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP051",
+    "DiemDen": "Vĩnh Châu",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 247,
+    "ThoiGianAsText": "5 giờ 51 phút",
+    "SoGio": 5,
+    "SoPhut": 51,
+    "ThoiGian": 5.85
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55354d"
+    },
+    "": 161,
+    "IDTuyen": "T162",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP052",
+    "DiemDen": "Vĩnh Thuận",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 283,
+    "ThoiGianAsText": "5 giờ 23 phút",
+    "SoGio": 5,
+    "SoPhut": 23,
+    "ThoiGian": 5.38
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55354e"
+    },
+    "": 162,
+    "IDTuyen": "T163",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP054",
+    "DiemDen": "Vũng Tàu",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 105,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55354f"
+    },
+    "": 163,
+    "IDTuyen": "T164",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP001",
+    "DiemDen": "An Nhơn",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 600000,
+    "QuangDuong": 627,
+    "ThoiGianAsText": "10 giờ 7 phút",
+    "SoGio": 10,
+    "SoPhut": 7,
+    "ThoiGian": 10.12
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553550"
+    },
+    "": 164,
+    "IDTuyen": "T165",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP002",
+    "DiemDen": "Bạc Liêu",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 272,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553551"
+    },
+    "": 165,
+    "IDTuyen": "T166",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP004",
+    "DiemDen": "Bến Tre",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 75,
+    "ThoiGianAsText": "2 giờ",
+    "SoGio": 2,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553552"
+    },
+    "": 166,
+    "IDTuyen": "T167",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP006",
+    "DiemDen": "Buôn Ma Thuột",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 354,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553553"
+    },
+    "": 167,
+    "IDTuyen": "T168",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP006",
+    "DiemDen": "Buôn Ma Thuột",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 330,
+    "ThoiGianAsText": "9 giờ 30 phút",
+    "SoGio": 9,
+    "SoPhut": 30,
+    "ThoiGian": 9.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553554"
+    },
+    "": 168,
+    "IDTuyen": "T169",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP006",
+    "DiemDen": "Buôn Ma Thuột",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 435,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553555"
+    },
+    "": 169,
+    "IDTuyen": "T170",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP008",
+    "DiemDen": "Cà Mau",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 303,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553556"
+    },
+    "": 170,
+    "IDTuyen": "T171",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP009",
+    "DiemDen": "Cam Ranh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 350,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553557"
+    },
+    "": 171,
+    "IDTuyen": "T172",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 167,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553558"
+    },
+    "": 172,
+    "IDTuyen": "T173",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP011",
+    "DiemDen": "Cao Lãnh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 145,
+    "ThoiGianAsText": "3 giờ",
+    "SoGio": 3,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553559"
+    },
+    "": 173,
+    "IDTuyen": "T174",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP012",
+    "DiemDen": "Châu Đốc",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 240,
+    "ThoiGianAsText": "6 giờ 15 phút",
+    "SoGio": 6,
+    "SoPhut": 15,
+    "ThoiGian": 6.25
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55355a"
+    },
+    "": 174,
+    "IDTuyen": "T175",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 310,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55355b"
+    },
+    "": 175,
+    "IDTuyen": "T176",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 310,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55355c"
+    },
+    "": 176,
+    "IDTuyen": "T177",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 310,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55355d"
+    },
+    "": 177,
+    "IDTuyen": "T178",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP014",
+    "DiemDen": "Đà Nẵng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 980,
+    "ThoiGianAsText": "20 giờ",
+    "SoGio": 20,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55355e"
+    },
+    "": 178,
+    "IDTuyen": "T179",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP016",
+    "DiemDen": "Đại Ngãi",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 230,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55355f"
+    },
+    "": 179,
+    "IDTuyen": "T180",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP019",
+    "DiemDen": "Gia Lai",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 515,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553560"
+    },
+    "": 180,
+    "IDTuyen": "T181",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP021",
+    "DiemDen": "Hà Tiên",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 316,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553561"
+    },
+    "": 181,
+    "IDTuyen": "T182",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP022",
+    "DiemDen": "Hộ Phòng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 271,
+    "ThoiGianAsText": "5 giờ 21 phút",
+    "SoGio": 5,
+    "SoPhut": 21,
+    "ThoiGian": 5.35
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553562"
+    },
+    "": 182,
+    "IDTuyen": "T183",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP023",
+    "DiemDen": "Hồng Ngự",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 178,
+    "ThoiGianAsText": "5 giờ",
+    "SoGio": 5,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553563"
+    },
+    "": 183,
+    "IDTuyen": "T184",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP024",
+    "DiemDen": "Huế",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 943,
+    "ThoiGianAsText": "25 giờ",
+    "SoGio": 25,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553564"
+    },
+    "": 184,
+    "IDTuyen": "T185",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP025",
+    "DiemDen": "Long Xuyên",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 186,
+    "ThoiGianAsText": "5 giờ",
+    "SoGio": 5,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553565"
+    },
+    "": 185,
+    "IDTuyen": "T186",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP026",
+    "DiemDen": "Mũi Né",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 207,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553566"
+    },
+    "": 186,
+    "IDTuyen": "T187",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP027",
+    "DiemDen": "Năm Căn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 357,
+    "ThoiGianAsText": "7 giờ 18 phút",
+    "SoGio": 7,
+    "SoPhut": 18,
+    "ThoiGian": 7.3
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553567"
+    },
+    "": 187,
+    "IDTuyen": "T188",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP030",
+    "DiemDen": "Nha Trang",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 427,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553568"
+    },
+    "": 188,
+    "IDTuyen": "T189",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP. Hồ Chí Minh",
+    "IDThanhPhoDen": "TP030",
+    "DiemDen": "Nha Trang",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 426,
+    "ThoiGianAsText": "9 giờ",
+    "SoGio": 9,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553569"
+    },
+    "": 189,
+    "IDTuyen": "T190",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP031",
+    "DiemDen": "Ninh Hòa",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 400000,
+    "QuangDuong": 462,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55356a"
+    },
+    "": 190,
+    "IDTuyen": "T191",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP033",
+    "DiemDen": "Núi Sập",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 250000,
+    "QuangDuong": 200,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55356b"
+    },
+    "": 191,
+    "IDTuyen": "T192",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP035",
+    "DiemDen": "Phan Thiết",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 203,
+    "ThoiGianAsText": "6 giờ",
+    "SoGio": 6,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55356c"
+    },
+    "": 192,
+    "IDTuyen": "T193",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP036",
+    "DiemDen": "Quảng Ngãi",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 757,
+    "ThoiGianAsText": "18 giờ",
+    "SoGio": 18,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55356d"
+    },
+    "": 193,
+    "IDTuyen": "T194",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP037",
+    "DiemDen": "Qui Nhơn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 585,
+    "ThoiGianAsText": "14 giờ",
+    "SoGio": 14,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55356e"
+    },
+    "": 194,
+    "IDTuyen": "T195",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP038",
+    "DiemDen": "Rạch Giá",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 202,
+    "ThoiGianAsText": "6 giờ 15 phút",
+    "SoGio": 6,
+    "SoPhut": 15,
+    "ThoiGian": 6.25
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55356f"
+    },
+    "": 195,
+    "IDTuyen": "T196",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP039",
+    "DiemDen": "Sa Đéc",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 142,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553570"
+    },
+    "": 196,
+    "IDTuyen": "T197",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP040",
+    "DiemDen": "Sóc Trăng",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 223,
+    "ThoiGianAsText": "6 giờ 30 phút",
+    "SoGio": 6,
+    "SoPhut": 30,
+    "ThoiGian": 6.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553571"
+    },
+    "": 197,
+    "IDTuyen": "T198",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP042",
+    "DiemDen": "Tây Sơn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 750,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553572"
+    },
+    "": 198,
+    "IDTuyen": "T199",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP042",
+    "DiemDen": "Tây Sơn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 600000,
+    "QuangDuong": 720,
+    "ThoiGianAsText": "12 giờ 30 phút",
+    "SoGio": 12,
+    "SoPhut": 30,
+    "ThoiGian": 12.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553573"
+    },
+    "": 199,
+    "IDTuyen": "T200",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP043",
+    "DiemDen": "Thốt Nốt",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 205,
+    "ThoiGianAsText": "5 giờ 30 phút",
+    "SoGio": 5,
+    "SoPhut": 30,
+    "ThoiGian": 5.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553574"
+    },
+    "": 200,
+    "IDTuyen": "T201",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP044",
+    "DiemDen": "Tịnh Biên",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 252,
+    "ThoiGianAsText": "5 giờ 13 phút",
+    "SoGio": 5,
+    "SoPhut": 13,
+    "ThoiGian": 5.22
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553575"
+    },
+    "": 201,
+    "IDTuyen": "T202",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP047",
+    "DiemDen": "Trà Vinh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 133,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553576"
+    },
+    "": 202,
+    "IDTuyen": "T203",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP048",
+    "DiemDen": "Tri Tôn",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 232,
+    "ThoiGianAsText": "5 giờ 59 phút",
+    "SoGio": 5,
+    "SoPhut": 59,
+    "ThoiGian": 5.98
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553577"
+    },
+    "": 203,
+    "IDTuyen": "T204",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP049",
+    "DiemDen": "Tuy Hòa",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 535,
+    "ThoiGianAsText": "12 giờ",
+    "SoGio": 12,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553578"
+    },
+    "": 204,
+    "IDTuyen": "T205",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP050",
+    "DiemDen": "Vị Thanh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 209,
+    "ThoiGianAsText": "5 giờ",
+    "SoGio": 5,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553579"
+    },
+    "": 205,
+    "IDTuyen": "T206",
+    "IDThanhPhoXuatPhat": "TP045",
+    "DiemXuatPhat": "TP.Hồ Chí Minh",
+    "IDThanhPhoDen": "TP054",
+    "DiemDen": "Vũng Tàu",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 94,
+    "ThoiGianAsText": "4 giờ",
+    "SoGio": 4,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55357a"
+    },
+    "": 206,
+    "IDTuyen": "T207",
+    "IDThanhPhoXuatPhat": "TP046",
+    "DiemXuatPhat": "Trà Ôn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 161,
+    "ThoiGianAsText": "3 giờ 16 phút",
+    "SoGio": 3,
+    "SoPhut": 16,
+    "ThoiGian": 3.27
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55357b"
+    },
+    "": 207,
+    "IDTuyen": "T208",
+    "IDThanhPhoXuatPhat": "TP047",
+    "DiemXuatPhat": "Trà Vinh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 130,
+    "ThoiGianAsText": "4 giờ 30 phút",
+    "SoGio": 4,
+    "SoPhut": 30,
+    "ThoiGian": 4.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55357c"
+    },
+    "": 208,
+    "IDTuyen": "T209",
+    "IDThanhPhoXuatPhat": "TP048",
+    "DiemXuatPhat": "Tri Tôn",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 232,
+    "ThoiGianAsText": "5 giờ 59 phút",
+    "SoGio": 5,
+    "SoPhut": 59,
+    "ThoiGian": 5.98
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55357d"
+    },
+    "": 209,
+    "IDTuyen": "T210",
+    "IDThanhPhoXuatPhat": "TP049",
+    "DiemXuatPhat": "Tuy Hoà",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 506,
+    "ThoiGianAsText": "13 giờ",
+    "SoGio": 13,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55357e"
+    },
+    "": 210,
+    "IDTuyen": "T211",
+    "IDThanhPhoXuatPhat": "TP049",
+    "DiemXuatPhat": "Tuy Hòa",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 500000,
+    "QuangDuong": 535,
+    "ThoiGianAsText": "13 giờ",
+    "SoGio": 13,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a55357f"
+    },
+    "": 211,
+    "IDTuyen": "T212",
+    "IDThanhPhoXuatPhat": "TP050",
+    "DiemXuatPhat": "Vị Thanh",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP.Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 209,
+    "ThoiGianAsText": "5 giờ",
+    "SoGio": 5,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553580"
+    },
+    "": 212,
+    "IDTuyen": "T213",
+    "IDThanhPhoXuatPhat": "TP051",
+    "DiemXuatPhat": "Vĩnh Châu",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 247,
+    "ThoiGianAsText": "5 giờ 51 phút",
+    "SoGio": 5,
+    "SoPhut": 51,
+    "ThoiGian": 5.85
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553581"
+    },
+    "": 213,
+    "IDTuyen": "T214",
+    "IDThanhPhoXuatPhat": "TP052",
+    "DiemXuatPhat": "Vĩnh Thuận",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 250000,
+    "QuangDuong": 283,
+    "ThoiGianAsText": "5 giờ 23 phút",
+    "SoGio": 5,
+    "SoPhut": 23,
+    "ThoiGian": 5.38
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553582"
+    },
+    "": 214,
+    "IDTuyen": "T215",
+    "IDThanhPhoXuatPhat": "TP053",
+    "DiemXuatPhat": "Vĩnh Thuận (Kiên Giang)",
+    "IDThanhPhoDen": "TP005",
+    "DiemDen": "Bình Dương",
+    "IDLoaiXe": "LX001",
+    "LoaiXe": "Giường",
+    "GiaVe": 300000,
+    "QuangDuong": 311,
+    "ThoiGianAsText": "8 giờ",
+    "SoGio": 8,
+    "SoPhut": 0
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553583"
+    },
+    "": 215,
+    "IDTuyen": "T216",
+    "IDThanhPhoXuatPhat": "TP054",
+    "DiemXuatPhat": "Vũng Tàu",
+    "IDThanhPhoDen": "TP010",
+    "DiemDen": "Cần Thơ",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 400000,
+    "QuangDuong": 451,
+    "ThoiGianAsText": "9 giờ 9 phút",
+    "SoGio": 9,
+    "SoPhut": 9,
+    "ThoiGian": 9.15
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553584"
+    },
+    "": 216,
+    "IDTuyen": "T217",
+    "IDThanhPhoXuatPhat": "TP054",
+    "DiemXuatPhat": "Vũng Tàu",
+    "IDThanhPhoDen": "TP013",
+    "DiemDen": "Đà Lạt",
+    "IDLoaiXe": "LX003",
+    "LoaiXe": "Limousine",
+    "GiaVe": 300000,
+    "QuangDuong": 318,
+    "ThoiGianAsText": "7 giờ 30 phút",
+    "SoGio": 7,
+    "SoPhut": 30,
+    "ThoiGian": 7.5
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553585"
+    },
+    "": 217,
+    "IDTuyen": "T218",
+    "IDThanhPhoXuatPhat": "TP054",
+    "DiemXuatPhat": "Vũng Tàu",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 105,
+    "ThoiGianAsText": "3 giờ 44 phút",
+    "SoGio": 3,
+    "SoPhut": 44,
+    "ThoiGian": 3.73
+  },
+  {
+    "_id": {
+      "$oid": "66327cf73d5a3c726a553586"
+    },
+    "": 218,
+    "IDTuyen": "T219",
+    "IDThanhPhoXuatPhat": "TP054",
+    "DiemXuatPhat": "Vũng Tàu",
+    "IDThanhPhoDen": "TP045",
+    "DiemDen": "TP. Hồ Chí Minh",
+    "IDLoaiXe": "LX002",
+    "LoaiXe": "Ghế",
+    "GiaVe": 250000,
+    "QuangDuong": 95,
+    "ThoiGianAsText": "3 giờ",
+    "SoGio": 3,
+    "SoPhut": 0
+  }]

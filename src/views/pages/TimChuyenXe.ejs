@@ -1,0 +1,154 @@
+<html>
+
+</html><%- include('../partials/header', {title:'Tim Chuyen Xe'}) %>
+<body>
+    <link rel="stylesheet" href="/stylesheets/timchuyenxe.css">
+    <% if (selectedOption==='nosql' ) { %>
+        <div class="search-container-chuyen-xe">
+            <form action="/nosql/timchuyenxe" method="post">
+                <div class="search-bar-chuyen-xe">
+                    <div class="DiemXuatPhat-input">
+                        <label for="from">Điểm xuất phát:</label>
+                        <input type="text" name="diemDi" id="DiemXuatPhat-input" placeholder="Điểm xuất phát">
+                    </div>
+
+                    <div class="DiemDen-input">
+                        <label for="to">Điểm đến:</label>
+                        <input type="text" name="diemDen" id="DiemDen-input" placeholder="Điểm đến">
+                    </div>
+
+                    <div class="ThoiGian-input">
+                        <label for="departure-date">Ngày khởi hành:</label>
+                        <input type="date" id="departure-date" placeholder="Ngày đi">
+                    </div>
+
+                    <div class="SoVe-input">
+                        <label for="quantity">Số vé:</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="Số vé">
+                    </div>
+
+                </div>
+                <button type="submit" class="search-bar-chuyen-xe-btn" onclick="search-chuyen-xe-save">Tìm Chuyến xe</button>
+                <!-- Sử dụng button submit để gửi form -->
+                <script>
+                    
+                </script>
+                
+            </form>
+        </div>
+        
+        <% } else { %>
+            <div class="search-container-chuyen-xe">
+                <form action="/sql/timchuyenxe" method="POST"> <!-- Sử dụng phương thức POST và cập nhật action -->
+                    <div class="search-bar-chuyen-xe">
+                        <div class="DiemXuatPhat-input">
+                            <label for="from">Điểm xuất phát:</label>
+                            <input type="text" name="diemDi" id="DiemXuatPhat-input" placeholder="Điểm xuất phát">
+                        </div>
+
+                        <div class="DiemDen-input">
+                            <label for="to">Điểm đến:</label>
+                            <input type="text" name="diemDen" id="DiemDen-input" placeholder="Điểm đến">
+                        </div>
+
+                        <div class="ThoiGian-input">
+                            <label for="departure-date">Ngày khởi hành:</label>
+                            <input type="date" id="departure-date" placeholder="Ngày đi">
+                        </div>
+
+                        <div class="SoVe-input">
+                            <label for="quantity">Số vé:</label>
+                            <input type="number" id="quantity" name="quantity" placeholder="Số vé">
+                        </div>
+                    </div>                                 
+                    <button type="submit" id="search-bar-chuyen-xe-btn" class="search-bar-chuyen-xe-btn">Chọn chuyến</button>
+                    <!-- Sử dụng button submit để gửi form -->
+
+                </form>
+            </div>
+            <% } %>
+
+            
+
+            <div class="flex-container">
+                <div class="chuyen-xe-container">
+                    <% ChuyenXeList.forEach(chuyenXe => { %>
+                        <div class="chuyen-xe-item">
+                            <div class="row-1-chuyenxe">
+                                <div class="DiemXuatPhat-item">
+                                    <p class="DiaDiem-font"><%= chuyenXe.DiemXuatPhat %></p>
+                                    <p><%= chuyenXe.NgayXuatPhat %></p>
+                                    <p><%= chuyenXe.ThoiGianKhoiHanh %></p>
+                                </div>
+                
+                                <div class="ThoiGian-item">
+                                    <p>------------- <%= chuyenXe.ThoiGian %> -------------</p>
+                                </div>
+                
+                                <div class="DiemDen-item">
+                                    <p class="DiaDiem-font"><%= chuyenXe.DiemDen %></p>
+                                    <p><%= chuyenXe.NgayDen %></p>
+                                    <p><%= chuyenXe.ThoiGianDen %></p>
+                                </div>
+                            </div>
+                            <div class="ThongTinXe-item">
+                                <div class="xe-info">
+                                    <p class="LoaiXe"><%= chuyenXe.LoaiXe %></p>
+                                    <span class="separator">•</span>
+                                    <p class="SoGhe"><%= chuyenXe.SoGhe %> chỗ</p>
+                                </div>
+                                <p class="GiaVe"><%= chuyenXe.GiaVe %></p>
+                            </div>
+                            
+                            <div class="row-2-chuyenxe">
+                                <button type="submit" class="chon-chuyen-xe-btn" onclick="redirectToDatVe()">Chọn chuyến</button>
+                                <!-- Đoạn mã JavaScript để chuyển hướng -->
+                                <script>
+                                    function redirectToDatVe() { 
+                                        // Lấy giá trị của các ô nhập liệu
+                                        // const diemDi = document.getElementById('diem-di-input').value;
+                                        // const diemDen = document.getElementById('diem-den-input').value;
+
+                                        
+                                        // Tạo URL với các tham số điểm đi và điểm đến
+                                        var url = '/nosql/DatVe';
+                                        
+                                        // Chuyển hướng đến trang /nosql/timchuyenxe với các tham số
+                                        window.location.href = url;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+
+                <div class="filter-sidebar">
+                    <label for="sorting">Sắp xếp theo:</label>
+                    <select id="sorting" name="sorting">
+                        <option value="default">Mặc định</option>
+                        <option value="price">Giá</option>
+                        <option value="date">Ngày</option>
+                        <option value="name">Tên</option>
+                    </select>
+
+                    <h4>Bộ Lọc</h4>
+                    <div class="filter">
+                        <h5=>Buổi</h5>
+                        <label><input type="checkbox" name="filterMorning" onchange={handleBuoi}> Buổi Sáng</label><br>
+                        <label><input type="checkbox" name="filterAfternoon"> Buổi Chiều</label><br>
+                        <label><input type="checkbox" name="filterEvening"> Buổi Tối</label><br>
+                    </div>
+
+                    <div class="filter">
+                        <h5>Loại Xe</h5>
+                        <label><input type="checkbox" name="filterVehicleType" value="Giường"> Giường</label><br>
+                        <label><input type="checkbox" name="filterVehicleType" value="Limousine"> Limousine</label><br>
+                        <label><input type="checkbox" name="filterVehicleType" value="Ghế"> Ghế</label><br>
+                    </div>                                
+                </div>
+            </div>
+            
+            
+            
+</body>
+</html>

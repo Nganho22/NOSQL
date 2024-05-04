@@ -46,6 +46,20 @@
                 <input type="number" id="quantity" placeholder="Số vé">
             </div>
             <button onclick="search()">Tìm kiếm</button>
+            <!-- Đoạn mã JavaScript để chuyển hướng -->
+            <script>
+                function search() { 
+                    // Lấy giá trị của các ô nhập liệu
+                    var diemDi = document.getElementById('from').value;
+                    var diemDen = document.getElementById('to').value;
+                    
+                    // Tạo URL với các tham số điểm đi và điểm đến
+                    var url = '/nosql/timchuyenxe';
+                    
+                    // Chuyển hướng đến trang /nosql/timchuyenxe với các tham số
+                    window.location.href = url;
+                }
+            </script>
         </div>
 
         <section id="routes">
