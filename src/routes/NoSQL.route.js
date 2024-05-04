@@ -8,5 +8,8 @@ router.get('/tuyenxe', NoSQLController.GetTuyenXe)
 router.post('/tuyenxe', NoSQLController.GetTuyenXe)
 router.get('/login', NoSQLController.GetLoginPage)
 router.get('/DatVe', NoSQLController.GetDatVePage)
+router.post('/DatVe', NoSQLController.GetDatVePage)
+router.get('/HoaDon', NoSQLController.GetHoaDonPage)
+router.post('/HoaDon', NoSQLController.GetHoaDonPage)
 router.get('/', NoSQLController.gethomepage)
 module.exports = router

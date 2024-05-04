@@ -165,34 +165,158 @@ let getChiTietTuyen = async (req, res) => {
 
 let GetDatVePage = async (req, res) => {
     try {
-        // Kết nối đến MongoDB
-        await connectToMongoDB();
-        /* if (mongoose.connection.readyState !== 1) {
-             throw new Error('MongoDB connection is not established.');
-         }*/
-        const collection = mongoose.connection.collection('restaurants');
-
-        const result = await collection.find({}, { "name": 1 }).toArray();
-
-        // Xử lý kết quả trước khi gửi về client
-        const TuyenXes = result.map(record => ({
-            Ten: record.name,
-        }));
-        console.log('TuyenXes:', TuyenXes);
-
-        return res.render('pages/DatVe.ejs', { TuyenXes: TuyenXes, selectedOption: 'nosql' });
+      // Kết nối đến MongoDB
+      await connectToMongoDB();
+      // Lấy dữ liệu chuyến xe từ collection ChuyenXe
+      const collection = mongoose.connection.collection("ChuyenXe");
+  
+      const result = await collection.find({ IDChuyen: "C0011" }).toArray();
+  
+      // Xử lý kết quả trước khi gửi về client
+      const ChuyenXe = result.map((record) => ({
+        Ten: record.IDChuyen,
+        Tuyen: record.TuyenXe,
+        ThoiGian: record.ThoiGian,
+        Xe: record.Xe,
+        GiaVe: record.GiaVe,
+        DSGhe: record.DSGhe,
+        NgayXuatPhat: record.NgayXuatPhat,
+        ThoiGianXuatPhat: record.ThoiGianXuatPhat,
+      }));
+  
+      // console.log("ChuyenXe DSGhe:");
+      // ChuyenXe.forEach((chuyen) => {
+      //   console.log("REquest",req.body)
+      // });
+      console.log("Request", req.body);
+      const formData = req.body;
+  
+      if (Object.keys(formData).length === 0 && formData.constructor === Object) {
+        // Nếu không có dữ liệu, render trang "DatVe.ejs"
+        return res.render("pages/DatVe.ejs", {
+          ChuyenXe: ChuyenXe,
+          selectedOption: "nosql",
+        });
+      } else {
+        // Nếu có dữ liệu, chuyển hướng đến trang "HoaDon.ejs" và truyền dữ liệu FormData
+        formData.IDChuyen = "C0011";
+        // console.log(formData)
+        const queryString = new URLSearchParams(formData).toString(); // Chuyển FormData thành query string
+        return res.redirect(`/nosql/HoaDon?${queryString}`);
+      }
     } catch (error) {
-        console.error('Error executing MongoDB query:', error);
-        return res.status(500).send('Internal Server Error');
+      console.error("Error retrieving data:", error);
+      return res.status(500).send("Internal Server Error");
     } finally {
-        mongoose.connection.close()
+      // Đóng kết nối MongoDB sau khi hoàn tất
+      mongoose.connection.close();
     }
-}
+  };
+  
+  let GetHoaDonPage = async (req, res) => {
+    try {
+      const url = require("url");
+      const querystring = require("querystring");
+      // Đọc query string từ URL
+      const urlParams = querystring.parse(url.parse(req.url).query);
+  
+      const TenKhachHang = urlParams.name;
+      const Email = urlParams.email;
+      const SDT = urlParams.phone;
+      const DSGhe = urlParams.selectedSeat
+        ? urlParams.selectedSeat.split(",")
+        : [];
+      const Total = urlParams.Total;
+      const IDChuyen = urlParams.IDChuyen;
+  
+      await connectToMongoDB();
+      // Lấy dữ liệu chuyến xe từ collection ChuyenXe
+      const collection = mongoose.connection.collection("ChuyenXe");
+  
+      const result = await collection.find({ IDChuyen: IDChuyen }).toArray();
+      const ChuyenXe = result.map((record) => ({
+        Ten: record.IDChuyen,
+        Tuyen: record.TuyenXe,
+        ThoiGian: record.ThoiGian,
+        Xe: record.Xe,
+        GiaVe: record.GiaVe,
+        DSGhe: record.DSGhe,
+        NgayXuatPhat: record.NgayXuatPhat,
+        ThoiGianXuatPhat: record.ThoiGianXuatPhat,
+      }));
+      // Xử lý kết quả trước khi gửi về client
+      const HoaDon = {
+        Ten: TenKhachHang,
+        Email: Email,
+        SDT: SDT,
+        DSGhe: DSGhe,
+        TongTien: Total,
+        IDChuyen: IDChuyen,
+      };
+  
+      for (const seat of DSGhe) {
+        console.log("HoaDon:", HoaDon);
+        const filter = { IDChuyen: IDChuyen, "DSGhe.MaGhe": seat };
+  
+        const update = {
+          $set: {
+            "DSGhe.$.TinhTrang": 1,
+            "DSGhe.$.NguoiMua": {
+              // Thêm thông tin người mua vào object NguoiMua
+              Ten: TenKhachHang,
+              SDT: SDT,
+              Email: Email,
+            },
+          },
+        }; // Cập nhật TinhTrang thành 1
+        const result = await collection.updateOne(filter, update);
+  
+        console.log("seat", seat);
+        console.log("filter", filter);
+        console.log("update", update);
+        console.log("result", result);
+  
+        console.log(
+          `Updated document with seat ${seat}: ${result.modifiedCount} document(s) affected.`
+        );
+      }
+  
+      console.log(`Successfully updated ${DSGhe.length} documents.`);
+      // Khi button được bấm thì mới thực hiện đoạn này
+      if (req.body && req.body.btnClicked === "true") {
+        return res.render("pages/ThanhToanThanhCong.ejs", {
+          selectedOption: "nosql",
+        });
+      }
+  
+      return res.render("pages/HoaDon.ejs", {
+        HoaDon: HoaDon,
+        ChuyenXe: ChuyenXe,
+        selectedOption: "nosql",
+      });
+    } catch (error) {
+      console.error("Error retrieving data:", error);
+      return res.status(500).send("Internal Server Error");
+    } finally {
+      // Đóng kết nối MongoDB sau khi hoàn tất
+      mongoose.connection.close();
+    }
+  };
+  
+  // -----------------------------------------------------
+  
+  let GetThanhToanThanhCong = async (req, res) => {
+    return res.render("pages/ThanhToanThanhCong.ejs", {
+      selectedOption: "nosql",
+    });
+  };
 
 module.exports = {
     gethomepage,
     GetLoginPage,
     GetDatVePage,
     GetTuyenXe,
-    getChiTietTuyen
+    getChiTietTuyen,
+    GetHoaDonPage,
+    GetThanhToanThanhCong
 }

@@ -14,7 +14,8 @@ BEGIN
                lx.TenLoaiXe AS 'LoaiXe', 
                 CAST(t.GiaVe AS VARCHAR(20)) AS 'GiaVe', -- Chỉ lấy phần số nguyên
                t.QuangDuong, 
-               t.ThoiGianAsText 
+               t.ThoiGianAsText,
+			   t.IDTuyen
         FROM TuyenXe t
         JOIN ThanhPho tpden ON t.IDThanhPhoDen = tpden.IDThanhPho
         JOIN ThanhPho tpdi ON t.IDThanhPhoXuatPhat = tpdi.IDThanhPho
@@ -28,7 +29,8 @@ BEGIN
                 lx.TenLoaiXe AS 'LoaiXe', 
                 CAST(t.GiaVe AS VARCHAR(20)) AS 'GiaVe', -- Chỉ lấy phần số nguyên
                t.QuangDuong, 
-               t.ThoiGianAsText 
+               t.ThoiGianAsText,
+			     t.IDTuyen
         FROM TuyenXe t
         JOIN ThanhPho tpden ON t.IDThanhPhoDen = tpden.IDThanhPho
         JOIN ThanhPho tpdi ON t.IDThanhPhoXuatPhat = tpdi.IDThanhPho
@@ -42,7 +44,8 @@ BEGIN
                 lx.TenLoaiXe AS 'LoaiXe', 
                 CAST(t.GiaVe AS VARCHAR(20)) AS 'GiaVe', -- Chỉ lấy phần số nguyên
                t.QuangDuong, 
-               t.ThoiGianAsText 
+               t.ThoiGianAsText,
+			     t.IDTuyen
         FROM TuyenXe t
         JOIN ThanhPho tpden ON t.IDThanhPhoDen = tpden.IDThanhPho
         JOIN ThanhPho tpdi ON t.IDThanhPhoXuatPhat = tpdi.IDThanhPho
@@ -56,7 +59,8 @@ BEGIN
                 lx.TenLoaiXe AS 'LoaiXe', 
                 CAST(t.GiaVe AS VARCHAR(20)) AS 'GiaVe', -- Chỉ lấy phần số nguyên
                t.QuangDuong, 
-               t.ThoiGianAsText 
+               t.ThoiGianAsText,
+			     t.IDTuyen
         FROM TuyenXe t
         JOIN ThanhPho tpden ON t.IDThanhPhoDen = tpden.IDThanhPho
         JOIN ThanhPho tpdi ON t.IDThanhPhoXuatPhat = tpdi.IDThanhPho
@@ -155,6 +159,30 @@ CREATE PROCEDURE Xem_DS_Ben_Di
 AS
 BEGIN
    SELECT B.TenBen AS 'BenDi' FROM TuyenBenDi TDi, Ben B WHERE TDi.IDTuyen =@T AND B.IDBen = TDi.IDBenDi
+
+END;
+Go
+
+EXEC Xem_DS_Ben_Di @T ='T001'
+
+IF OBJECT_ID('Xem_Tuyen_Theo_ID', 'P') IS NOT NULL
+    DROP PROCEDURE Xem_Tuyen_Theo_ID;
+GO
+CREATE PROCEDURE Xem_Tuyen_Theo_ID
+    @T NVARCHAR(20)
+AS
+BEGIN
+   SELECT tpdi.TenThanhPho AS 'Di', 
+               tpden.TenThanhPho AS 'Den', 
+               lx.TenLoaiXe AS 'LoaiXe', 
+                CAST(t.GiaVe AS VARCHAR(20)) AS 'GiaVe', -- Chỉ lấy phần số nguyên
+               t.QuangDuong, 
+               t.ThoiGianAsText 
+        FROM TuyenXe t
+        JOIN ThanhPho tpden ON t.IDThanhPhoDen = tpden.IDThanhPho
+        JOIN ThanhPho tpdi ON t.IDThanhPhoXuatPhat = tpdi.IDThanhPho
+        JOIN LoaiXe lx ON lx.IDLoaiXe = t.IDLoaiXe
+        WHERE t.IDTuyen = @T
 
 END;
 Go

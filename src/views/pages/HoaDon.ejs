@@ -1,0 +1,43 @@
+<%- include('../partials/header', {title:'Hóa Đơn'}) %>
+<html>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/hoadon.css" />
+  <form id="paymentForm" method="POST" action="/nosql/HoaDon">
+    <div class="sidebar">
+      <% ChuyenXe.forEach(function(chuyenXe) { %>
+      <div>
+        <h3>Thông tin chuyến xe</h3>
+        <p>Điểm xuất phát: <%= chuyenXe.Tuyen.DiemXuatPhat %></p>
+        <p>Điểm đến: <%= chuyenXe.Tuyen.DiemDen %></p>
+        <p>Thời gian: <%= chuyenXe.ThoiGian %></p>
+        <p>Loại xe: <%= chuyenXe.Xe.LoaiXe %></p>
+        <p>Biển số xe: <%= chuyenXe.Xe.BienSoXe %></p>
+        <p>
+          Thời gian xuất phát: <%= chuyenXe.NgayXuatPhat %> <%=
+          chuyenXe.ThoiGianXuatPhat %>
+        </p>
+        <!-- Add more trip information as needed -->
+      </div>
+      <% }); %>
+    </div>
+    <div class="hoadon-container">
+      <h3>Thông tin Hóa Đơn</h3>
+      <p>Tên khách hàng: <%= HoaDon.Ten %></p>
+      <p>Email: <%= HoaDon.Email %></p>
+      <p>Số điện thoại: <%= HoaDon.SDT %></p>
+      <p>Tổng tiền: <%= HoaDon.TongTien %></p>
+      <% HoaDon.DSGhe.forEach(function(maghe) { %>
+      <p>Mã ghế: <%= maghe %></p>
+      <% }); %>
+      <!-- Add more invoice information as needed -->
+      <input type="hidden" id="btnClicked" name="btnClicked" value="false" />
+
+      <button type="button" style="font-size: 18px" onclick="handlePayment()">Thanh Toán</button>
+    </div>
+  </form>
+  <script>
+    function handlePayment() {
+        document.getElementById("btnClicked").value = "true";
+        document.getElementById("paymentForm").submit();
+    }
+  </script>
+</html>

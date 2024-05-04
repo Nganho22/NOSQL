@@ -1,4 +1,162 @@
-<html>
-<%- include('../partials/header', {title:'Trang chủ'}) %>
+<%- include('../partials/header', {title:'Đặt Vé Xe'}) %>
 
+<html>
+  <body>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/datve.css" />
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ĐẶT VÉ XE</title>
+      </head>
+      <body>
+        <!-- Left sidebar for displaying trip information -->
+        <div class="sidebar">
+          <% ChuyenXe.forEach(function(chuyenXe) { %>
+          <div>
+            <h3>Thông tin chuyến xe</h3>
+            <p>Điểm xuất phát: <%= chuyenXe.Tuyen.DiemXuatPhat %></p>
+            <p>Điểm đến: <%= chuyenXe.Tuyen.DiemDen %></p>
+            <p>Thời gian: <%= chuyenXe.ThoiGian %></p>
+            <p>Loại xe: <%= chuyenXe.Xe.LoaiXe %></p>
+            <p>Biển số xe: <%= chuyenXe.Xe.BienSoXe %></p>
+            <p>
+              Thời gian xuất phát: <%= chuyenXe.NgayXuatPhat %> <%=
+              chuyenXe.ThoiGianXuatPhat %>
+            </p>
+            <!-- Add more trip information as needed -->
+          </div>
+          <% }); %>
+        </div>
+        <!-- Ticket selector section -->
+
+        <form method="post">
+          <div class="tickets-container">
+            <div class="tickets">
+              <div class="ticket-selector">
+                <div class="head">
+                  <!-- Apply custom font and size to the title -->
+                  <div class="title" style="font-size: 30px">Đặt vé xe</div>
+                </div>
+                <div class="seats">
+                  <div class="status">
+                    <!-- Apply custom font size to seat status items -->
+                    <div class="item" style="font-size: 20px">Ghế trống</div>
+                    <div class="item" style="font-size: 20px">Ghế đã bán</div>
+                    <div class="item" style="font-size: 20px">
+                      Ghế đang chọn
+                    </div>
+                  </div>
+                  <div class="all-seats"></div>
+                </div>
+                <div class="price">
+                  <div class="total">
+                    <span style="font-size: 18px">
+                      <span class="count" style="font-size: 18px">0</span>
+                      Tickets
+                    </span>
+                    <div class="amount" style="font-size: 18px">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-nguoidung">
+            <div class="container-form">
+            <label for="name"><b>Tên</b></label>
+            <input
+              type="text"
+              placeholder="Nhập tên khách hàng"
+              name="name"
+              required
+            />
+            <label for="email"><b>Email</b></label>
+            <input type="Text" placeholder="Nhập email" name="email" required />
+            <label for="phone"><b>Số điện thoại</b></label>
+            <input
+              type="text"
+              placeholder="Nhập số điện thoại"
+              name="phone"
+              required
+            />
+          </div>
+          <button type="submit" style="font-size: 18px">Đặt vé</button>
+          </div>
+          <input type="hidden" id="Total" name="Total" value="" />
+          <input type="hidden" id="selectedSeat" name="selectedSeat" value="" />
+        </form>
+        <!-- JavaScript code for dynamic seat selection -->
+        <script>
+          let pricePerTicket = 0; // Default value
+          let seatStatus = 'empty';
+          let listSeat = [];
+          let Total = 0;
+          <% ChuyenXe.forEach(function(chuyenXe) { %>
+            if (<%= chuyenXe.GiaVe %> > 0) {
+              pricePerTicket = <%= chuyenXe.GiaVe %>;
+            }
+          <% }); %>
+
+          let seats = document.querySelector(".all-seats");
+          <% ChuyenXe.forEach(function(chuyenXe) { %>
+            <% chuyenXe.DSGhe.forEach(function(gh) { %>
+              if (<%= gh.TinhTrang %> === 1) {
+                let seatStatus = 'booked';
+                let seatLabel = '<%= gh.MaGhe %>'; // Nhãn của ghế
+                document.querySelector(".all-seats").insertAdjacentHTML(
+                  "beforeend",
+                  `<input type="checkbox" name="tickets" id="s${seatLabel}" ${
+                    seatStatus === "booked" ? "disabled" : ""
+                  } /><label for="s${seatLabel}" class="seat ${seatStatus}">${seatLabel}</label>`
+                );
+              } else {
+                let seatStatus = 'empty';
+                let seatLabel = '<%= gh.MaGhe %>'; // Nhãn của ghế
+                document.querySelector(".all-seats").insertAdjacentHTML(
+                  "beforeend",
+                  `<input type="checkbox" name="tickets" id="s${seatLabel}" ${
+                    seatStatus === "booked" ? "disabled" : ""
+                  } /><label for="s${seatLabel}" class="seat ${seatStatus}">${seatLabel}</label>`
+                );
+              }
+            <% }); %>
+          <% }); %>
+
+          let tickets = seats.querySelectorAll("input");
+          tickets.forEach((ticket) => {
+            ticket.addEventListener("change", () => {
+              if (!ticket.disabled) {
+                let amount = document.querySelector(".amount").innerHTML;
+                let count = document.querySelector(".count").innerHTML;
+                amount = Number(amount);
+                count = Number(count);
+                let selectedSeatLabel = ticket.nextSibling.innerHTML; // Lấy label của ghế được chọn
+                if (ticket.checked) {
+                  count += 1;
+                  amount += pricePerTicket;
+                  listSeat.push(selectedSeatLabel)
+                  Total+=pricePerTicket;
+                  // document.getElementById("selectedSeat").value = selectedSeatLabel; // Gán label của ghế được chọn vào input ẩn
+                } else {
+                  count -= 1;
+                  amount -= pricePerTicket;
+                  Total-=pricePerTicket;
+                  let seatindex= listSeat.indexOf(selectedSeatLabel)
+                  listSeat.splice(seatindex, 1);
+                  // document.getElementById("selectedSeat").value = ""; // Xóa label của ghế được bỏ chọn khi không còn chọn nữa
+                }
+                document.querySelector(".amount").innerHTML = amount;
+                document.querySelector(".count").innerHTML = count;
+                document.getElementById("selectedSeat").value = listSeat;
+                document.getElementById("Total").value = Total;
+              } else {
+                ticket.checked = false; // Bỏ chọn checkbox nếu đã bị vô hiệu hóa
+              }
+            });
+          });
+        </script>
+      </body>
+    </html>
+  </body>
 </html>
