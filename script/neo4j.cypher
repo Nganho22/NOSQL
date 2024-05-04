@@ -83,7 +83,7 @@ CASE WHEN row[1] IS null THEN 'null' ELSE row[1] END
 //Quan he tuyen & tp_den
         LOAD CSV FROM 'file: ///tuyen_tp.csv' AS row FIELDTERMINATOR ';'
         WITH row
-        WHERE row[0] IS NOT null AND (row[1] IS NOT null OR row[2] IS NOT null )
+        WHERE row[0] IS NOT null AND row[1] IS NOT null AND row[2] IS NOT null
         MATCH (t:Tuyen { IDTuyen: row[0] }), (tpden:ThanhPho {IDThanhPho: row[2]})
         CREATE (t)-[:Den]->(tpden);
         
